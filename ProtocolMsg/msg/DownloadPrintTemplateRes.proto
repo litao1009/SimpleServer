@@ -1,0 +1,17 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+import "msg-GL.proto";
+
+message		QDownloadPrintTemplateRes
+{
+	repeated	bytes			HashCodes	= 1;
+}
+
+message		ADownloadPrintTemplateRes
+{	
+	required	EReturnStatus			Stats					= 1;
+	
+	repeated	bytes			PassedHashCodes					= 2;
+	repeated	bytes			RejectedHashCodes				= 3;
+}

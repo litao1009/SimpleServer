@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A58A44F5-FCEE-4EDF-AD98-7B5ED9B0D70E}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>soci_core_static</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)build\lib\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ObjDir)</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)build\lib\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ObjDir)</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)src;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)src;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;SOCI_ABI_VERSION="3_2";SOCI_LIB_PREFIX="soci_";SOCI_LIB_SUFFIX=".dll";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SOCI_ABI_VERSION="3_2";SOCI_LIB_PREFIX="soci_";SOCI_LIB_SUFFIX=".dll";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include=".\src\backend-loader.h" />
+    <ClInclude Include=".\src\blob-exchange.h" />
+    <ClInclude Include=".\src\blob.h" />
+    <ClInclude Include=".\src\boost-fusion.h" />
+    <ClInclude Include=".\src\boost-gregorian-date.h" />
+    <ClInclude Include=".\src\boost-optional.h" />
+    <ClInclude Include=".\src\boost-tuple.h" />
+    <ClInclude Include=".\src\connection-parameters.h" />
+    <ClInclude Include=".\src\connection-pool.h" />
+    <ClInclude Include=".\src\error.h" />
+    <ClInclude Include=".\src\exchange-traits.h" />
+    <ClInclude Include=".\src\into-type.h" />
+    <ClInclude Include=".\src\into.h" />
+    <ClInclude Include=".\src\once-temp-type.h" />
+    <ClInclude Include=".\src\prepare-temp-type.h" />
+    <ClInclude Include=".\src\procedure.h" />
+    <ClInclude Include=".\src\query_transformation.h" />
+    <ClInclude Include=".\src\ref-counted-prepare-info.h" />
+    <ClInclude Include=".\src\ref-counted-statement.h" />
+    <ClInclude Include=".\src\row-exchange.h" />
+    <ClInclude Include=".\src\row.h" />
+    <ClInclude Include=".\src\rowid-exchange.h" />
+    <ClInclude Include=".\src\rowid.h" />
+    <ClInclude Include=".\src\rowset.h" />
+    <ClInclude Include=".\src\session.h" />
+    <ClInclude Include=".\src\soci-backend.h" />
+    <ClInclude Include=".\src\soci-config.h" />
+    <ClInclude Include=".\src\soci-platform.h" />
+    <ClInclude Include=".\src\soci-simple.h" />
+    <ClInclude Include=".\src\soci.h" />
+    <ClInclude Include=".\src\statement.h" />
+    <ClInclude Include=".\src\transaction.h" />
+    <ClInclude Include=".\src\type-conversion-traits.h" />
+    <ClInclude Include=".\src\type-conversion.h" />
+    <ClInclude Include=".\src\type-holder.h" />
+    <ClInclude Include=".\src\type-ptr.h" />
+    <ClInclude Include=".\src\unsigned-types.h" />
+    <ClInclude Include=".\src\use-type.h" />
+    <ClInclude Include=".\src\use.h" />
+    <ClInclude Include=".\src\values-exchange.h" />
+    <ClInclude Include=".\src\values.h" />
+    <ClInclude Include=".\src\version.h" />
+    <ClCompile Include=".\src\backend-loader.cpp" />
+    <ClCompile Include=".\src\blob.cpp" />
+    <ClCompile Include=".\src\connection-parameters.cpp" />
+    <ClCompile Include=".\src\connection-pool.cpp" />
+    <ClCompile Include=".\src\error.cpp" />
+    <ClCompile Include=".\src\into-type.cpp" />
+    <ClCompile Include=".\src\once-temp-type.cpp" />
+    <ClCompile Include=".\src\prepare-temp-type.cpp" />
+    <ClCompile Include=".\src\procedure.cpp" />
+    <ClCompile Include=".\src\ref-counted-prepare-info.cpp" />
+    <ClCompile Include=".\src\ref-counted-statement.cpp" />
+    <ClCompile Include=".\src\row.cpp" />
+    <ClCompile Include=".\src\rowid.cpp" />
+    <ClCompile Include=".\src\session.cpp" />
+    <ClCompile Include=".\src\soci-simple.cpp" />
+    <ClCompile Include=".\src\statement.cpp" />
+    <ClCompile Include=".\src\transaction.cpp" />
+    <ClCompile Include=".\src\use-type.cpp" />
+    <ClCompile Include=".\src\values.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

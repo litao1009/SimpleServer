@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Forend>
+	<Thread Mode="CPU Factor">1</Thread>
+	<ListenPorts>
+		<Port>3661</Port>
+		<Port>3662</Port>
+	</ListenPorts>
+</Forend>
+
+<Backend>
+	<Thread Mode="CPU Factor">1</Thread>
+</Backend>
+
+<DBServer>
+	driver={sql server}; server=192.168.1.200;database=PinquDB;uid=moriServer;pwd=qweasdzxc
+</DBServer>

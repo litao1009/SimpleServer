@@ -1,0 +1,28 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+import "EOrderState.proto";
+
+message	SQUpdateOrder
+{
+	required	int64					OrderID		= 1;
+	required	order.EOrderState		ToStatus	= 2;
+	optional	string					Comment		= 3;
+};
+
+message	SAUpdateOrder
+{
+	required	int64					OrderID		= 1;
+	required	EReturnStatus			Stats		= 2;
+};
+
+message		QUpdateOrder
+{
+	repeated	SQUpdateOrder			Orders		= 1;
+}
+
+message		AUpdateOrder
+{	
+	required	EReturnStatus			Stats		= 1;
+	repeated	SAUpdateOrder			Results		= 2;
+}

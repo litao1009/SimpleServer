@@ -1,0 +1,333 @@
+package transMsg;
+
+message	GL_AppVerInfo
+{
+	optional	int32	AppVerID = 1;
+	optional	int32	ClientType = 2;
+	optional	bool	IsActive = 3;
+	optional	int64	FileSize = 4;
+	optional	string	AppVerCode = 5;
+	optional	string	HashCode = 6;
+	optional	string	FilePath = 7;
+}
+
+message	GL_AppleseedInfo
+{
+	optional	int32	ItemID = 1;
+	optional	string	ItemName = 2;
+	optional	string	ItemData = 3;
+}
+
+message	GL_AreaGeoMapInfo
+{
+	optional	int32	AreaID = 1;
+	optional	string	GeoCode = 2;
+}
+
+message	GL_AreaInfo
+{
+	optional	int32	AreaID = 1;
+	optional	int32	DeptID = 2;
+	optional	int32	CreatorID = 3;
+	optional	int32	UpdaterID = 4;
+	optional	int64	CreateTime = 5;
+	optional	int64	UpdateTime = 6;
+	optional	string	AreaName = 7;
+}
+
+message	GL_BaseBoardInfo
+{
+	optional	int32	CabShape = 1;
+	optional	int32	CabGapType = 2;
+	optional	int32	BoardType = 3;
+	optional	int32	BoardPosition = 4;
+	optional	int32	FactoryID = 5;
+	optional	string	XFormula = 6;
+	optional	string	YFormula = 7;
+	optional	int32	XDock = 8;
+	optional	int32	YDock = 9;
+	optional	int32	ZDock = 10;
+	optional	string	XOffset = 11;
+	optional	string	YOffset = 12;
+	optional	string	ZOffset = 13;
+	optional	double	ArcX = 14;
+	optional	double	ArcY = 15;
+	optional	double	ArcZ = 16;
+	optional	string	Name = 17;
+}
+
+message	GL_ChargeLogInfo
+{
+	optional	int32	LogID = 1;
+	optional	string	CardNo = 2;
+	optional	int32	FactoryID = 3;
+	optional	int32	ShopID = 4;
+	optional	int32	UserID = 5;
+}
+
+message	GL_DeptInfo
+{
+	optional	int32	DeptID = 1;
+	optional	int32	ParentID = 2;
+	optional	bool	IsDel = 3;
+	optional	int32	DTypeID = 4;
+	optional	int32	IncOrder = 5;
+	optional	int32	ShowOrder = 6;
+	optional	int32	CreatorID = 7;
+	optional	int32	UpdaterID = 8;
+	optional	int64	CreateTime = 9;
+	optional	int64	UpdateTime = 10;
+	optional	string	GeoCode = 11;
+	optional	string	DeptCode = 12;
+	optional	string	DeptName = 13;
+	optional	string	Postcode = 14;
+	optional	string	Tel = 15;
+	optional	string	Contacter = 16;
+	optional	string	ContactAddress = 17;
+	optional	string	DeptMemo = 18;
+}
+
+message	GL_DesignerConfigInfo
+{
+	optional	bool	EnableSnap = 1;
+	optional	bool	AllPole = 2;
+	optional	bool	CrossPole = 3;
+	optional	bool	WallPole = 4;
+	optional	bool	HotspotCapture = 5;
+	optional	bool	GridShow = 6;
+	optional	int32	AngleStep = 7;
+	optional	int32	TargetRange = 8;
+	optional	int32	DesignBGID = 9;
+	optional	int32	PrintBGID = 10;
+	optional	int32	GridBigID = 11;
+	optional	int32	GridSmallID = 12;
+	optional	int32	HotspotRotateID = 13;
+	optional	int32	HotspotNormalID = 14;
+	optional	int32	HotspotSelectID = 15;
+	optional	int32	CreatePointID = 16;
+	optional	int64	DesignBGColor = 17;
+	optional	int64	PrintBGColor = 18;
+	optional	int64	GridBigColor = 19;
+	optional	int64	GridSmallColor = 20;
+	optional	int64	HotspotRotateColor = 21;
+	optional	int64	HotspotNormalColor = 22;
+	optional	int64	HotspotSelectColor = 23;
+	optional	int64	CreatePointColor = 24;
+	optional	int32	UserID = 25;
+	optional	double	WallThickness = 26;
+	optional	double	WallHeight = 27;
+	optional	double	BaseLineLen = 28;
+	optional	double	GridWidth = 29;
+	optional	double	SnapRange = 30;
+	optional	double	SkirtLineOffsetLen = 31;
+	optional	double	BottomLineOffsetLen = 32;
+	optional	double	TopLineOffsetLen = 33;
+}
+
+message	GL_GTypeInfo
+{
+	optional	int32	GTypeID = 1;
+	optional	string	GTypeName = 2;
+}
+
+message	GL_GeoCodeInfo
+{
+	optional	string	GeoCode = 1;
+	optional	string	GeoName = 2;
+}
+
+message	GL_MajorCateInfo
+{
+	optional	int32	MajorCateID = 1;
+	optional	string	MajorCateName = 2;
+}
+
+message	GL_MinorCateInfo
+{
+	optional	int32	MajorCateID = 1;
+	optional	int32	MinorCateID = 2;
+	optional	string	MinorCateName = 3;
+}
+
+message	GL_MinorGTypeMapInfo
+{
+	optional	int32	MajorCateID = 1;
+	optional	int32	MinorCateID = 2;
+	optional	int32	CreateType = 3;
+	optional	int32	GTypeID = 4;
+}
+
+message	GL_OrderInfo
+{
+	optional	int64	OrderID = 1;
+	optional	int64	ClientOrderID = 2;
+	optional	int32	OrderIndex = 3;
+	optional	int32	OrderType = 4;
+	optional	int32	FactoryID = 5;
+	optional	int32	ShopID = 6;
+	optional	int32	OrderStatus = 7;
+	optional	bool	IsDel = 8;
+	optional	int32	DesignerID = 9;
+	optional	int32	ShopAuditorID = 10;
+	optional	int32	ShopCommitorID = 11;
+	optional	int32	FactoryGraphAuditorID = 12;
+	optional	int32	FactoryListAuditorID = 13;
+	optional	int32	FactoryFinanceAuditorID = 14;
+	optional	int64	ShopAuditTime = 15;
+	optional	int64	ShopCommitTime = 16;
+	optional	int64	GraphAuditTime = 17;
+	optional	int64	ListAuditTime = 18;
+	optional	int64	FinanceAuditTime = 19;
+	optional	string	OrderCode = 20;
+	optional	string	ShopAuditContent = 21;
+	optional	string	ShopCommitContent = 22;
+	optional	string	GraphAuditContent = 23;
+	optional	string	ListAuditContent = 24;
+	optional	string	FinanceAuditContent = 25;
+}
+
+message	GL_PinYin
+{
+	optional	string	PYCode = 1;
+	optional	string	PYName = 2;
+}
+
+message	GL_PrepaidCardInfo
+{
+	optional	int32	CardID = 1;
+	optional	int32	CardCategory = 2;
+	optional	int32	CardType = 3;
+	optional	int32	Period = 4;
+	optional	string	SecureCode = 5;
+	optional	string	CardPwd = 6;
+	optional	string	SerialNo = 7;
+	optional	string	CardNo = 8;
+}
+
+message	GL_PrintTemplateInfo
+{
+	optional	int32	TemplateID = 1;
+	optional	int32	FactoryID = 2;
+	optional	bool	IsActive = 3;
+	optional	string	RelativePath = 4;
+	optional	string	TemplateName = 5;
+	optional	string	TemplateMemo = 6;
+	optional	string	HashCode = 7;
+}
+
+message	GL_RoleInfo
+{
+	optional	int32	RoleID = 1;
+	optional	int32	DeptID = 2;
+	optional	int32	DTypeID = 3;
+	optional	int32	CreatorID = 4;
+	optional	int32	UpdaterID = 5;
+	optional	int64	CreateTime = 6;
+	optional	int64	UpdateTime = 7;
+	optional	string	RoleName = 8;
+}
+
+message	GL_RoleRightInfo
+{
+	optional	int32	RightID = 1;
+	optional	int32	RightType = 2;
+	optional	int32	RoleID = 3;
+}
+
+message	GL_SugarVerInfo
+{
+	optional	int64	VerCode = 1;
+	optional	int32	DeptID = 2;
+	optional	int32	VerType = 3;
+	optional	int32	VerIndex = 4;
+	optional	int32	UploadStatus = 5;
+	optional	int32	FileCount = 6;
+	optional	int32	VerDBState = 7;
+	optional	int32	CreatorID = 8;
+	optional	int64	StartTime = 9;
+	optional	int64	StopTime = 10;
+	optional	int64	CreateTime = 11;
+	optional	string	VerMemo = 12;
+}
+
+message	GL_TransferOrderInfo
+{
+	optional	int64	RecordID = 1;
+	optional	int32	TransferByUserID = 2;
+	optional	int32	TransferToUserID = 3;
+}
+
+message	GL_UnitInfo
+{
+	optional	int32	UnitID = 1;
+	optional	int32	GTypeID = 2;
+	optional	string	UnitName = 3;
+	optional	int32	CreatorID = 4;
+	optional	int32	UpdaterID = 5;
+	optional	int64	CreateTime = 6;
+	optional	int64	UpdateTime = 7;
+}
+
+message	GL_UserActivationInfo
+{
+	optional	int32	UserID = 1;
+	optional	string	ActivationCode = 2;
+	optional	int32	TryCount = 3;
+	optional	int64	LastTryTime = 4;
+}
+
+message	GL_UserInfo
+{
+	optional	int32	UserID = 1;
+	optional	int32	FactoryID = 2;
+	optional	int32	ShopID = 3;
+	optional	int32	DeptID = 4;
+	optional	bool	IsDel = 5;
+	optional	int32	RoleID = 6;
+	optional	int32	CreatorID = 7;
+	optional	int32	UpdaterID = 8;
+	optional	int64	CreateTime = 9;
+	optional	int64	UpdateTime = 10;
+	optional	string	UserPwd = 11;
+	optional	string	UserCode = 12;
+	optional	string	EncodeStr = 13;
+	optional	string	TrueName = 14;
+	optional	string	IDCode = 15;
+	optional	string	QQNum = 16;
+	optional	string	Email = 17;
+	optional	string	Tel = 18;
+	optional	string	CellPhone = 19;
+	optional	string	PostCode = 20;
+	optional	string	ContactAddress = 21;
+	optional	bool	IsActived = 22;
+	optional	bool	IsLocked = 23;
+}
+
+message GL_Table
+{
+	repeated	GL_AppVerInfo	GL_AppVerInfo = 1;
+	repeated	GL_AppleseedInfo	GL_AppleseedInfo = 2;
+	repeated	GL_AreaGeoMapInfo	GL_AreaGeoMapInfo = 3;
+	repeated	GL_AreaInfo	GL_AreaInfo = 4;
+	repeated	GL_BaseBoardInfo	GL_BaseBoardInfo = 5;
+	repeated	GL_ChargeLogInfo	GL_ChargeLogInfo = 6;
+	repeated	GL_DeptInfo	GL_DeptInfo = 7;
+	repeated	GL_DesignerConfigInfo	GL_DesignerConfigInfo = 8;
+	repeated	GL_GTypeInfo	GL_GTypeInfo = 9;
+	repeated	GL_GeoCodeInfo	GL_GeoCodeInfo = 10;
+	repeated	GL_MajorCateInfo	GL_MajorCateInfo = 11;
+	repeated	GL_MinorCateInfo	GL_MinorCateInfo = 12;
+	repeated	GL_MinorGTypeMapInfo	GL_MinorGTypeMapInfo = 13;
+	repeated	GL_OrderInfo	GL_OrderInfo = 14;
+	repeated	GL_PinYin	GL_PinYin = 15;
+	repeated	GL_PrepaidCardInfo	GL_PrepaidCardInfo = 16;
+	repeated	GL_PrintTemplateInfo	GL_PrintTemplateInfo = 17;
+	repeated	GL_RoleInfo	GL_RoleInfo = 18;
+	repeated	GL_RoleRightInfo	GL_RoleRightInfo = 19;
+	repeated	GL_SugarVerInfo	GL_SugarVerInfo = 20;
+	repeated	GL_TransferOrderInfo	GL_TransferOrderInfo = 21;
+	repeated	GL_UnitInfo	GL_UnitInfo = 22;
+	repeated	GL_UserActivationInfo	GL_UserActivationInfo = 23;
+	repeated	GL_UserInfo	GL_UserInfo = 24;
+}
+

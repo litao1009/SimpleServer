@@ -1,0 +1,15 @@
+import "EClientType.proto";
+
+package CodecProtocol;
+
+message Codec
+{
+	required	string			MsgName		= 1;
+	required	EClientType		ClientType	= 2;
+	optional	int32			UserID		= 3;
+	optional	bytes			VerifyCode	= 4;
+	
+	optional	int32	RawSize		= 5;
+	optional	bytes	AESKey		= 6;
+	optional	bool	RSAEncode	= 7 [default=false];
+};

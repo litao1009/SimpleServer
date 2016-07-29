@@ -1,0 +1,16 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+
+message		QDownloadRes
+{	
+	repeated	bytes	FileHashs	= 1;			//希望下载的文件列表
+}
+
+message		ADownloadRes
+{	
+	required	EReturnStatus	Stats		= 1;
+	
+	repeated	bytes	PassedHashs			= 2;	//接收成功的文件
+	repeated	bytes	RejectedHashs		= 3;	//服务器拒绝的文件
+}

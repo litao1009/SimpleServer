@@ -1,0 +1,17 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+import "msg-JK.proto";
+
+message		QUpLoadLib
+{
+	required	JK_Table		JK_Table = 1;
+}
+
+message		AUpLoadLib
+{	
+	required	EReturnStatus	Stats		= 1;
+	optional	int64			VerCode		= 2;
+	optional	int32			VerIndex	= 3;
+	repeated	bytes			NeededFiles	= 4;	//服务器还需要的文件列表
+}

@@ -1,0 +1,16 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+
+
+message		QTransferOrder
+{
+	required	int64	OrderID	= 1;
+	required	int32	OwnUser	= 2;
+	required	int32	ToUser	= 3;
+}
+
+message		ATransferOrder
+{	
+	required	EReturnStatus	Stats			= 1;
+}

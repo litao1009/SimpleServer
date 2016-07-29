@@ -1,0 +1,16 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+
+message		QUploadRes
+{	
+	repeated	bytes	FilesHash	= 1;			//文件列表
+}
+
+message		AUploadRes
+{	
+	required	EReturnStatus	Stats		= 1;
+	
+	repeated	bytes		RejectedFiles	= 2;	//服务器拒绝接受的文件
+	repeated	bytes		LostFiles		= 3;	//服务器验证失败的文件
+}

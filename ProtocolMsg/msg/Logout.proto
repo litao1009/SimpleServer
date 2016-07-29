@@ -1,0 +1,14 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+
+message QLogout
+{
+	required	int32			UserID		= 1;
+};
+
+
+message ALogout
+{
+	required	EReturnStatus	Stats		= 1;
+}

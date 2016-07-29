@@ -1,0 +1,76 @@
+package transMsg;
+
+message	SV_BOMChargeInfo
+{
+	required	int64	BOMChargeID = 1;
+	required	int32	FactoryID = 2;
+	required	int32	CategoryID = 3;
+	required	int32	Enable = 4;
+}
+
+message	SV_ChargeShopInfo
+{
+	required	int32	RecordID = 1;
+	required	int32	FactoryID = 2;
+	required	int32	ShopID = 3;
+	required	int32	UserID = 4;
+	required	int64	StartTime = 5;
+	required	int64	StopTime = 6;
+}
+
+message	SV_LibFileInfo
+{
+	required	int32	DeptID = 1;
+	required	string	HashCode = 2;
+	required	string	DestPath = 3;
+}
+
+message	SV_ModuleChargeInfo
+{
+	required	int64	ModuleChargeID = 1;
+	required	int32	ModuleID = 2;
+	required	int32	FactoryID = 3;
+	required	int32	ShopID = 4;
+	required	int32	UserID = 5;
+	required	int64	StartTime = 6;
+	required	int64	StopTime = 7;
+}
+
+message	SV_OrderActionRecordInfo
+{
+	required	int64	RecordID = 1;
+	required	int64	OrderID = 2;
+	required	int32	UserID = 3;
+	required	int32	ActionID = 4;
+	required	int64	RecordTime = 5;
+	required	string	AuditComment = 6;
+}
+
+message	SV_OrderFileInfo
+{
+	required	int64	OrderID = 1;
+	required	int32	TableType = 2;
+	required	string	FilePath = 3;
+}
+
+message	SV_UserLoginStatusInfo
+{
+	required	int32	LoginType = 1;
+	required	int32	UserID = 2;
+	required	int32	LoginStatus = 3;
+	required	int64	LoginTime = 4;
+	required	int64	LastVisitTime = 5;
+	required	string	LoginIP = 6;
+}
+
+message SV_Table
+{
+	repeated	SV_BOMChargeInfo	SV_BOMChargeInfo = 1;
+	repeated	SV_ChargeShopInfo	SV_ChargeShopInfo = 2;
+	repeated	SV_LibFileInfo	SV_LibFileInfo = 3;
+	repeated	SV_ModuleChargeInfo	SV_ModuleChargeInfo = 4;
+	repeated	SV_OrderActionRecordInfo	SV_OrderActionRecordInfo = 5;
+	repeated	SV_OrderFileInfo	SV_OrderFileInfo = 6;
+	repeated	SV_UserLoginStatusInfo	SV_UserLoginStatusInfo = 7;
+}
+

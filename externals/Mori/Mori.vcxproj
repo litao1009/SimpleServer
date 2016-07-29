@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\mori\common.h" />
+    <ClInclude Include="include\mori\concurrency\AsynConcurrentPool.h" />
+    <ClInclude Include="include\mori\concurrency\AsynConcurrentPoolFwd.h" />
+    <ClInclude Include="include\mori\net\Client.h" />
+    <ClInclude Include="include\mori\net\ClientFwd.h" />
+    <ClInclude Include="include\mori\net\ITcpContext.h" />
+    <ClInclude Include="include\mori\net\Server.h" />
+    <ClInclude Include="include\mori\net\ServerFwd.h" />
+    <ClInclude Include="include\mori\net\STransInfo.h" />
+    <ClInclude Include="include\mori\net\STransInfoFwd.h" />
+    <ClInclude Include="include\mori\net\TcpConnection.h" />
+    <ClInclude Include="include\mori\net\TcpConnectionFwd.h" />
+    <ClInclude Include="include\mori\predef\async.h" />
+    <ClInclude Include="include\mori\predef\sys.h" />
+    <ClInclude Include="include\mori\predef\file.h" />
+    <ClInclude Include="include\mori\predef\func.h" />
+    <ClInclude Include="include\mori\predef\int.h" />
+    <ClInclude Include="include\mori\predef\net.h" />
+    <ClInclude Include="include\mori\predef\smartPtr.h" />
+    <ClInclude Include="src\AsyncCore\AsyncProactorImp.h" />
+    <ClInclude Include="src\AsyncCore\Proactor.h" />
+    <ClInclude Include="src\Log.h" />
+    <ClInclude Include="src\Net\Buffer\BufferFwd.h" />
+    <ClInclude Include="src\Net\Buffer\InternalBuffer.h" />
+    <ClInclude Include="src\Net\Buffer\RecvBuffer.h" />
+    <ClInclude Include="src\Net\Buffer\SendBuffer.h" />
+    <ClInclude Include="src\Net\Buffer\SendBufferNode.h" />
+    <ClInclude Include="src\Net\Message\HeadInfo.pb.h" />
+    <ClInclude Include="src\Net\Message\MsgHead.h" />
+    <ClInclude Include="src\Net\Server\TimeWheel.h" />
+    <ClInclude Include="src\Net\TCP\Acceptor.h" />
+    <ClInclude Include="src\Net\TCP\CTcpDefaultContext.h" />
+    <ClInclude Include="src\Net\TCP\TcpEndPoint.h" />
+    <ClInclude Include="src\Net\TCP\TcpSoket.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AsyncCore\AsynConcurrentPool.cpp" />
+    <ClCompile Include="src\AsyncCore\Proactor.cpp" />
+    <ClCompile Include="src\common.cpp" />
+    <ClCompile Include="src\Log.cpp" />
+    <ClCompile Include="src\Net\Buffer\InternalBuffer.cpp" />
+    <ClCompile Include="src\Net\Buffer\RecvBuffer.cpp" />
+    <ClCompile Include="src\Net\Buffer\SendBuffer.cpp" />
+    <ClCompile Include="src\Net\Buffer\SendBufferNode.cpp" />
+    <ClCompile Include="src\Net\Client\Client.cpp" />
+    <ClCompile Include="src\Net\Message\HeadInfo.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="src\Net\Message\MsgHead.cpp" />
+    <ClCompile Include="src\Net\Server\Server.cpp" />
+    <ClCompile Include="src\Net\Server\TimeWheel.cpp" />
+    <ClCompile Include="src\Net\TCP\Acceptor.cpp" />
+    <ClCompile Include="src\Net\TCP\CTcpDefaultContext.cpp" />
+    <ClCompile Include="src\Net\TCP\TcpConnection.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AF4291D1-A751-40E0-AB3A-5BB56F94DE4B}</ProjectGuid>
+    <RootNamespace>Mori</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)include;$(ProjectDir)src;$(SolutionDir)externals/ProtocolBuf/include;$(SolutionDir)externals/TinyLog/include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)build\lib\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(ObjDir)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)build\lib\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(ObjDir)</IntDir>
+    <IncludePath>$(ProjectDir)include;$(ProjectDir)src;$(SolutionDir)externals/ProtocolBuf/include;$(SolutionDir)externals/TinyLog/include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>USE_TINYLOG;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>USE_TINYLOG;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

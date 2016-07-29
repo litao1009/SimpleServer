@@ -1,0 +1,26 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+import "msg-GL.proto";
+
+//登录过程中会与服务器交换一次RSA密钥(此密钥的生存周期等于VerifyCode)
+message QLogin
+{
+	required	bytes			UserCode	= 1;
+	required	bytes			UserPwd		= 2;
+	
+	optional	bytes			PubRSAKey	= 3;	//客户端的公钥
+};
+
+
+message ALogin
+{
+	required	EReturnStatus	Stats		= 1;
+	
+	optional	bytes			VerifyCode	= 2;	//登录验证码（每个消息必须携带）
+	optional	bytes			PubRSAKey	= 3;	//服务器的公钥
+	
+	optional	GL_UserInfo			GL_UserInfo	= 101;
+	repeated	GL_DeptInfo			GL_DeptInfo	= 102;
+	repeated	GL_RoleRightInfo	GL_RoleRightInfo	= 103;
+}

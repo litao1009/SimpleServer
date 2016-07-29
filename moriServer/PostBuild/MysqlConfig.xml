@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Forend>
+	<Thread Mode="CPU Factor">1</Thread>
+	<ListenPorts>
+		<Port>3663</Port>
+		<Port>3664</Port>
+	</ListenPorts>
+</Forend>
+
+<Backend>
+	<Thread Mode="CPU Factor">1</Thread>
+</Backend>
+
+<DBServer>
+	host=192.168.1.200 db=PinquDB user=root password='ewaypq2012' charset=utf8
+</DBServer>

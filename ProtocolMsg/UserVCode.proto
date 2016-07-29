@@ -1,0 +1,9 @@
+import "EClientType.proto";
+
+message UserVCode
+{
+	required	int32						UserID = 1;
+	required	int64						LoginTime = 2;
+	required	uint64						UID = 3;
+	required	CodecProtocol.EClientType	CType = 4;
+};

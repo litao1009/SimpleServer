@@ -1,0 +1,60 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+import "ETableType.proto";
+import "msg-GL.proto";
+
+message		SOrderInfo
+{
+	required	bytes			OrderInfo		= 1;	//SJ/DS/GC
+	required	GL_OrderInfo	StatusInfo		= 2;
+}
+
+message		SRejectedOrder
+{
+	required	int64			OrderID		= 1;
+	required	EReturnStatus	ErrCode		= 2;
+}
+
+message		QGetOrderInfo
+{
+	optional	ETableType		TableType		= 1;
+	
+	optional	string			OrderCode		= 2;
+	optional	string			OrderTitle		= 3;
+	repeated	int32			OrderStatus		= 4[packed=true];
+	optional	int64			OrderStartTime	= 5;
+	optional	int64			OrderStopTime	= 6;
+	optional	int32			Amount			= 7;
+	
+	/////////////////////////////////////////////////////////////
+	optional	int64			ShopAuditStartTime	= 8;
+	optional	int64			ShopAuditStopTime	= 9;
+	
+	optional	int64			ShopCommitStartTime	= 10;
+	optional	int64			ShopCommitStopTime	= 11;
+	
+	optional	int64			GraphAuditStartTime	= 12;
+	optional	int64			GraphAuditStopTime	= 13;
+	
+	optional	int64			ListAuditStartTime	= 14;
+	optional	int64			ListAuditStopTime	= 15;
+	
+	optional	int64			PriceAuditStartTime	= 16;
+	optional	int64			PriceAuditStopTime	= 17;
+	
+	optional	int64			FinanceAuditStartTime	= 18;
+	optional	int64			FinanceAuditStopTime	= 19;
+	/////////////////////////////////////////////////////////////
+	
+	optional	string			GeoCode			= 20;
+	
+	optional	bool			IsShare			= 21 [default=false];
+}
+
+message		AGetOrderInfo
+{	
+	required	EReturnStatus	Stats		= 1;
+	
+	repeated	SOrderInfo	OrderInfo		= 2;
+}

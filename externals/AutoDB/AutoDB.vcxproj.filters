@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="include\Adaptor">
+      <UniqueIdentifier>{fbbb8e02-0372-4068-aa06-d4ff2368c789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Adaptor">
+      <UniqueIdentifier>{8b0046f6-4ff0-4171-a8ce-97067b78e75a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\AutoDB\Config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoDB\DBColumn.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoDB\Condition.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoDB\Table.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoDB\Statement.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoDB\Util.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StatementImp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoDB\Column.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoDB\ColumnFwd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoDB\ColumnOperator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ColumnImp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ValueWrap.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoDB\Exchange.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TableFwd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TableImp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoDB\TableImpFwd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoDB\SColumnsFwd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoDB\SColumns.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoDB\Adaptor\SociAdaptor.h">
+      <Filter>include\Adaptor</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoDB\Function.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoDB\Optional.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConditionImp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\DBColumn.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Statement.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Condition.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Column.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Table.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SColumns.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Adaptor\SociAdaptor.cpp">
+      <Filter>src\Adaptor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Function.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

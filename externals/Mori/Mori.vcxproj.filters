@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include\net">
+      <UniqueIdentifier>{9e504777-66be-4dea-be5e-ce19917d7420}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\concurrency">
+      <UniqueIdentifier>{b61b86b2-c373-4d0f-bdad-3a5b5e949949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\AsyncCore">
+      <UniqueIdentifier>{2da1f00a-7167-421c-b31c-104d7bf89c55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Net">
+      <UniqueIdentifier>{098660eb-8332-4ebb-99aa-6bc68ced0272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Net\TCP">
+      <UniqueIdentifier>{591fa683-26a1-4171-bc1d-1c6421b46083}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Net\Server">
+      <UniqueIdentifier>{5895ff09-860a-44dd-bca1-06e1aa01034b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Net\Client">
+      <UniqueIdentifier>{244d0b65-689f-4bbf-b865-722abe7ff9d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Net\Message">
+      <UniqueIdentifier>{271a4f5b-0b07-4b8e-b550-e2565931a38c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Net\Buffer">
+      <UniqueIdentifier>{c138cf79-4a17-44ab-8cd3-cbb149fb8b02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\predef">
+      <UniqueIdentifier>{120787fc-45f7-4b82-91d6-d51209d467d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\mori\concurrency\AsynConcurrentPool.h">
+      <Filter>include\concurrency</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\concurrency\AsynConcurrentPoolFwd.h">
+      <Filter>include\concurrency</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncCore\Proactor.h">
+      <Filter>src\AsyncCore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\net\Server.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\net\TcpConnection.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\net\TcpConnectionFwd.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Net\Message\MsgHead.h">
+      <Filter>src\Net\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Log.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Net\Server\TimeWheel.h">
+      <Filter>src\Net\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Net\TCP\Acceptor.h">
+      <Filter>src\Net\TCP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\net\Client.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\net\STransInfoFwd.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\net\STransInfo.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Net\Buffer\SendBuffer.h">
+      <Filter>src\Net\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Net\Buffer\RecvBuffer.h">
+      <Filter>src\Net\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Net\Buffer\BufferFwd.h">
+      <Filter>src\Net\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\predef\file.h">
+      <Filter>include\predef</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\predef\func.h">
+      <Filter>include\predef</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\predef\int.h">
+      <Filter>include\predef</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\predef\net.h">
+      <Filter>include\predef</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\predef\smartPtr.h">
+      <Filter>include\predef</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\predef\sys.h">
+      <Filter>include\predef</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\net\ITcpContext.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Net\TCP\CTcpDefaultContext.h">
+      <Filter>src\Net\TCP</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Net\Message\HeadInfo.pb.h">
+      <Filter>src\Net\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Net\Buffer\InternalBuffer.h">
+      <Filter>src\Net\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Net\Buffer\SendBufferNode.h">
+      <Filter>src\Net\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\common.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\predef\async.h">
+      <Filter>include\predef</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\net\ServerFwd.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mori\net\ClientFwd.h">
+      <Filter>include\net</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Net\TCP\TcpSoket.h">
+      <Filter>src\Net\TCP</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Net\TCP\TcpEndPoint.h">
+      <Filter>src\Net\TCP</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncCore\AsyncProactorImp.h">
+      <Filter>src\AsyncCore</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AsyncCore\Proactor.cpp">
+      <Filter>src\AsyncCore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncCore\AsynConcurrentPool.cpp">
+      <Filter>src\AsyncCore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\Message\MsgHead.cpp">
+      <Filter>src\Net\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\TCP\TcpConnection.cpp">
+      <Filter>src\Net\TCP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\Server\Server.cpp">
+      <Filter>src\Net\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\Server\TimeWheel.cpp">
+      <Filter>src\Net\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\TCP\Acceptor.cpp">
+      <Filter>src\Net\TCP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\Client\Client.cpp">
+      <Filter>src\Net\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\TCP\CTcpDefaultContext.cpp">
+      <Filter>src\Net\TCP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\Message\HeadInfo.pb.cc">
+      <Filter>src\Net\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\Buffer\RecvBuffer.cpp">
+      <Filter>src\Net\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\Buffer\SendBuffer.cpp">
+      <Filter>src\Net\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\Buffer\InternalBuffer.cpp">
+      <Filter>src\Net\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Net\Buffer\SendBufferNode.cpp">
+      <Filter>src\Net\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Log.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

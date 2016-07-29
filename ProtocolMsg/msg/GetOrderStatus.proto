@@ -1,0 +1,22 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+import "EOrderState.proto";
+
+message		SOrderStatus
+{
+	required	int64				OrderID		= 1;
+	required	order.EOrderState	OrderStatus	= 2;
+}
+
+message		QGetOrderStatus
+{
+	repeated	int64	OrderIDs	= 1[packed=true];
+}
+
+message		AGetOrderStatus
+{	
+	required	EReturnStatus	Stats			= 1;
+	
+	repeated	SOrderStatus	OrderStatus		= 2;
+}

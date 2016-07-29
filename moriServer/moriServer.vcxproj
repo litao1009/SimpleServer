@@ -1,0 +1,859 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DbgMySql|Win32">
+      <Configuration>DbgMySql</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DbgService|Win32">
+      <Configuration>DbgService</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelXP|Win32">
+      <Configuration>RelXP</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelMySql|Win32">
+      <Configuration>RelMySql</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelXPMySql|Win32">
+      <Configuration>RelXPMySql</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelService|Win32">
+      <Configuration>RelService</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{336F8EF1-2783-481D-A7B4-3625B5352A17}</ProjectGuid>
+    <RootNamespace>moriServer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelMySql|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelService|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelXP|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelXPMySql|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RelMySql|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RelService|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RelXP|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RelXPMySql|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)build\bin\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(ObjDir)</IntDir>
+    <IncludePath>$(SolutionDir)externals/Mori/include;$(SolutionDir)externals/ProtocolBuf/include;$(SolutionDir)externals/zlib/include;$(SolutionDir)externals/cryptoPP/include;$(SolutionDir)externals/SOCI/backends/sqlite3/src;$(SolutionDir)externals/SOCI/backends/odbc/src;$(SolutionDir)externals/SOCI/core/src;$(SolutionDir)externals/AutoDB/include;$(SolutionDir)externals/TinyLog/include;$(ProjectDir)include;$(ProjectDir)src;$(ProjectDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+    <OutDir>$(SolutionDir)build\bin\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(ObjDir)</IntDir>
+    <IncludePath>$(SolutionDir)externals/Mori/include;$(SolutionDir)externals/ProtocolBuf/include;$(SolutionDir)externals/zlib/include;$(SolutionDir)externals/cryptoPP/include;$(SolutionDir)externals/SOCI/backends/sqlite3/src;$(SolutionDir)externals/SOCI/backends/mysql/include;$(SolutionDir)externals/SOCI/backends/mysql/src;$(SolutionDir)externals/SOCI/core/src;$(SolutionDir)externals/AutoDB/include;$(SolutionDir)externals/TinyLog/include;$(ProjectDir)include;$(ProjectDir)src;$(ProjectDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+    <OutDir>$(SolutionDir)build\bin\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(ObjDir)</IntDir>
+    <IncludePath>$(SolutionDir)externals/Mori/include;$(SolutionDir)externals/ProtocolBuf/include;$(SolutionDir)externals/zlib/include;$(SolutionDir)externals/cryptoPP/include;$(SolutionDir)externals/SOCI/backends/sqlite3/src;$(SolutionDir)externals/SOCI/backends/mysql/include;$(SolutionDir)externals/SOCI/backends/mysql/src;$(SolutionDir)externals/SOCI/core/src;$(SolutionDir)externals/AutoDB/include;$(SolutionDir)externals/TinyLog/include;$(ProjectDir)include;$(ProjectDir)src;$(ProjectDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)externals/Mori/include;$(SolutionDir)externals/ProtocolBuf/include;$(SolutionDir)externals/zlib/include;$(SolutionDir)externals/cryptoPP/include;$(SolutionDir)externals/SOCI/backends/sqlite3/src;$(SolutionDir)externals/SOCI/backends/odbc/src;$(SolutionDir)externals/SOCI/core/src;$(SolutionDir)externals/AutoDB/include;$(SolutionDir)externals/TinyLog/include;$(ProjectDir)include;$(ProjectDir)src;$(ProjectDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)build\bin\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(ObjDir)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelMySql|Win32'">
+    <IncludePath>$(SolutionDir)externals/Mori/include;$(SolutionDir)externals/ProtocolBuf/include;$(SolutionDir)externals/zlib/include;$(SolutionDir)externals/cryptoPP/include;$(SolutionDir)externals/SOCI/backends/sqlite3/src;$(SolutionDir)externals/SOCI/backends/mysql/include;$(SolutionDir)externals/SOCI/backends/mysql/src;$(SolutionDir)externals/SOCI/core/src;$(SolutionDir)externals/AutoDB/include;$(SolutionDir)externals/TinyLog/include;$(ProjectDir)include;$(ProjectDir)src;$(ProjectDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)build\bin\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(ObjDir)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelService|Win32'">
+    <IncludePath>$(SolutionDir)externals/Mori/include;$(SolutionDir)externals/ProtocolBuf/include;$(SolutionDir)externals/zlib/include;$(SolutionDir)externals/cryptoPP/include;$(SolutionDir)externals/SOCI/backends/sqlite3/src;$(SolutionDir)externals/SOCI/backends/mysql/include;$(SolutionDir)externals/SOCI/backends/mysql/src;$(SolutionDir)externals/SOCI/core/src;$(SolutionDir)externals/AutoDB/include;$(SolutionDir)externals/TinyLog/include;$(ProjectDir)include;$(ProjectDir)src;$(ProjectDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)build\bin\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(ObjDir)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelXP|Win32'">
+    <IncludePath>$(SolutionDir)externals/Mori/include;$(SolutionDir)externals/ProtocolBuf/include;$(SolutionDir)externals/zlib/include;$(SolutionDir)externals/cryptoPP/include;$(SolutionDir)externals/SOCI/backends/sqlite3/src;$(SolutionDir)externals/SOCI/backends/odbc/src;$(SolutionDir)externals/SOCI/core/src;$(SolutionDir)externals/AutoDB/include;$(SolutionDir)externals/TinyLog/include;$(ProjectDir)include;$(ProjectDir)src;$(ProjectDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)build\bin\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(ObjDir)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelXPMySql|Win32'">
+    <IncludePath>$(SolutionDir)externals/Mori/include;$(SolutionDir)externals/ProtocolBuf/include;$(SolutionDir)externals/zlib/include;$(SolutionDir)externals/cryptoPP/include;$(SolutionDir)externals/SOCI/backends/sqlite3/src;$(SolutionDir)externals/SOCI/backends/mysql/include;$(SolutionDir)externals/SOCI/backends/mysql/src;$(SolutionDir)externals/SOCI/core/src;$(SolutionDir)externals/AutoDB/include;$(SolutionDir)externals/TinyLog/include;$(ProjectDir)include;$(ProjectDir)src;$(ProjectDir);$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)build\bin\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(ObjDir)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>USE_SQLSERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)build\lib\TinyLog\WinDebugWin32\TinyLog.lib;$(SolutionDir)build\lib\ProtocolBuf\DebugWin32\ProtocolBuf.lib;$(SolutionDir)build\lib\Mori\DebugWin32\Mori.lib;$(SolutionDir)build\lib\zlib\DebugWin32\zlib.lib;$(SolutionDir)build\lib\cryptoPP\DebugWin32\cryptoPP.lib;$(SolutionDir)build\lib\soci_core_static\DebugWin32\soci_core_static.lib;$(SolutionDir)build\lib\soci_odbc_static\DebugWin32\soci_odbc_static.lib;$(SolutionDir)build\lib\soci_sqlite3_static\DebugWin32\soci_sqlite3_static.lib;$(SolutionDir)build\lib\AutoDB\DebugWin32\AutoDB.lib;$(ProjectDir)PostBuild\vld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>false</Profile>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy /y "$(ProjectDir)PostBuild\MSSQLconfig.xml" "$(OutDir)config.xml"
+copy /y "$(ProjectDir)PostBuild\dbghelp.dll" "$(OutDir)"
+copy /y "$(ProjectDir)PostBuild\Microsoft.DTfW.DHL.manifest" "$(OutDir)"
+copy /y "$(ProjectDir)PostBuild\vld_x86.dll" "$(OutDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>USE_MYSQL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)build\lib\TinyLog\ConsoleDebugWin32\TinyLog.lib;$(SolutionDir)build\lib\ProtocolBuf\DebugWin32\ProtocolBuf.lib;$(SolutionDir)build\lib\Mori\DebugWin32\Mori.lib;$(SolutionDir)build\lib\zlib\DebugWin32\zlib.lib;$(SolutionDir)build\lib\cryptoPP\DebugWin32\cryptoPP.lib;$(SolutionDir)build\lib\soci_core_static\DebugWin32\soci_core_static.lib;$(SolutionDir)build\lib\soci_sqlite3_static\DebugWin32\soci_sqlite3_static.lib;$(SolutionDir)build\lib\soci_mysql_static\DebugWin32\soci_mysql_static.lib;$(SolutionDir)build\lib\AutoDB\DebugWin32\AutoDB.lib;$(ProjectDir)PostBuild\vld.lib</AdditionalDependencies>
+      <Profile>false</Profile>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy /y "$(ProjectDir)PostBuild\MysqlConfig.xml" "$(OutDir)config.xml"
+copy /y "$(ProjectDir)PostBuild\dbghelp.dll" "$(OutDir)"
+copy /y "$(ProjectDir)PostBuild\Microsoft.DTfW.DHL.manifest" "$(OutDir)"
+copy /y "$(ProjectDir)PostBuild\vld_x86.dll" "$(OutDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>USE_MYSQL;MORI_SERVICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)build\lib\TinyLog\ConsoleDebugWin32\TinyLog.lib;$(SolutionDir)build\lib\ProtocolBuf\DebugWin32\ProtocolBuf.lib;$(SolutionDir)build\lib\Mori\DebugWin32\Mori.lib;$(SolutionDir)build\lib\zlib\DebugWin32\zlib.lib;$(SolutionDir)build\lib\cryptoPP\DebugWin32\cryptoPP.lib;$(SolutionDir)build\lib\soci_core_static\DebugWin32\soci_core_static.lib;$(SolutionDir)build\lib\soci_sqlite3_static\DebugWin32\soci_sqlite3_static.lib;$(SolutionDir)build\lib\soci_mysql_static\DebugWin32\soci_mysql_static.lib;$(SolutionDir)build\lib\AutoDB\DebugWin32\AutoDB.lib;$(ProjectDir)PostBuild\vld.lib</AdditionalDependencies>
+      <Profile>false</Profile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy /y "$(ProjectDir)PostBuild\MysqlConfig.xml" "$(OutDir)config.xml"
+copy /y "$(ProjectDir)PostBuild\dbghelp.dll" "$(OutDir)"
+copy /y "$(ProjectDir)PostBuild\Microsoft.DTfW.DHL.manifest" "$(OutDir)"
+copy /y "$(ProjectDir)PostBuild\vld_x86.dll" "$(OutDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;USE_SQLSERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(SolutionDir)build\lib\TinyLog\ConsoleReleaseWin32\TinyLog.lib;$(SolutionDir)build\lib\ProtocolBuf\ReleaseWin32\ProtocolBuf.lib;$(SolutionDir)build\lib\Mori\ReleaseWin32\Mori.lib;$(SolutionDir)build\lib\zlib\ReleaseWin32\zlib.lib;$(SolutionDir)build\lib\cryptoPP\ReleaseWin32\cryptoPP.lib;$(SolutionDir)build\lib\soci_core_static\ReleaseWin32\soci_core_static.lib;$(SolutionDir)build\lib\soci_odbc_static\ReleaseWin32\soci_odbc_static.lib;$(SolutionDir)build\lib\soci_sqlite3_static\ReleaseWin32\soci_sqlite3_static.lib;$(SolutionDir)build\lib\AutoDB\ReleaseWin32\AutoDB.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy /y "$(ProjectDir)PostBuild\MSSQLconfig.xml" "$(OutDir)config.xml"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelMySql|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;USE_MYSQL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(SolutionDir)build\lib\TinyLog\ConsoleReleaseWin32\TinyLog.lib;$(SolutionDir)build\lib\ProtocolBuf\ReleaseWin32\ProtocolBuf.lib;$(SolutionDir)build\lib\Mori\ReleaseWin32\Mori.lib;$(SolutionDir)build\lib\zlib\ReleaseWin32\zlib.lib;$(SolutionDir)build\lib\cryptoPP\ReleaseWin32\cryptoPP.lib;$(SolutionDir)build\lib\soci_core_static\ReleaseWin32\soci_core_static.lib;$(SolutionDir)build\lib\soci_sqlite3_static\ReleaseWin32\soci_sqlite3_static.lib;$(SolutionDir)build\lib\soci_mysql_static\ReleaseWin32\soci_mysql_static.lib;$(SolutionDir)build\lib\AutoDB\ReleaseWin32\AutoDB.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy /y "$(ProjectDir)PostBuild\MysqlConfig.xml" "$(OutDir)config.xml"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelService|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;USE_MYSQL;MORI_SERVICE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(SolutionDir)build\lib\TinyLog\ConsoleReleaseWin32\TinyLog.lib;$(SolutionDir)build\lib\ProtocolBuf\ReleaseWin32\ProtocolBuf.lib;$(SolutionDir)build\lib\Mori\ReleaseWin32\Mori.lib;$(SolutionDir)build\lib\zlib\ReleaseWin32\zlib.lib;$(SolutionDir)build\lib\cryptoPP\ReleaseWin32\cryptoPP.lib;$(SolutionDir)build\lib\soci_core_static\ReleaseWin32\soci_core_static.lib;$(SolutionDir)build\lib\soci_sqlite3_static\ReleaseWin32\soci_sqlite3_static.lib;$(SolutionDir)build\lib\soci_mysql_static\ReleaseWin32\soci_mysql_static.lib;$(SolutionDir)build\lib\AutoDB\ReleaseWin32\AutoDB.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy /y "$(ProjectDir)PostBuild\MysqlConfig.xml" "$(OutDir)config.xml"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelXP|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;USE_SQLSERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(SolutionDir)build\lib\TinyLog\ConsoleReleaseWin32\TinyLog.lib;$(SolutionDir)build\lib\ProtocolBuf\ReleaseWin32\ProtocolBuf.lib;$(SolutionDir)build\lib\Mori\ReleaseWin32\Mori.lib;$(SolutionDir)build\lib\zlib\ReleaseWin32\zlib.lib;$(SolutionDir)build\lib\cryptoPP\ReleaseWin32\cryptoPP.lib;$(SolutionDir)build\lib\soci_core_static\ReleaseWin32\soci_core_static.lib;$(SolutionDir)build\lib\soci_odbc_static\ReleaseWin32\soci_odbc_static.lib;$(SolutionDir)build\lib\soci_sqlite3_static\ReleaseWin32\soci_sqlite3_static.lib;$(SolutionDir)build\lib\AutoDB\ReleaseWin32\AutoDB.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy /y "$(ProjectDir)PostBuild\MSSQLconfig.xml" "$(OutDir)config.xml"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelXPMySql|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;USE_MYSQL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(SolutionDir)build\lib\TinyLog\ConsoleReleaseWin32\TinyLog.lib;$(SolutionDir)build\lib\ProtocolBuf\ReleaseWin32\ProtocolBuf.lib;$(SolutionDir)build\lib\Mori\ReleaseWin32\Mori.lib;$(SolutionDir)build\lib\zlib\ReleaseWin32\zlib.lib;$(SolutionDir)build\lib\cryptoPP\ReleaseWin32\cryptoPP.lib;$(SolutionDir)build\lib\soci_core_static\ReleaseWin32\soci_core_static.lib;$(SolutionDir)build\lib\soci_mysql_static\ReleaseWin32\soci_mysql_static.lib;$(SolutionDir)build\lib\soci_sqlite3_static\ReleaseWin32\soci_sqlite3_static.lib;$(SolutionDir)build\lib\AutoDB\ReleaseWin32\AutoDB.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy /y "$(ProjectDir)PostBuild\MysqlConfig.xml" "$(OutDir)config.xml"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\ChargingSystem\ChargingSystem.cpp" />
+    <ClCompile Include="src\Codec\Codec.cpp" />
+    <ClCompile Include="src\Codec\Codec.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="src\Codec\EClientType.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="src\Codec\UserVCode.pb.cc" />
+    <ClCompile Include="src\Config\ConfigMgr.cpp" />
+    <ClCompile Include="src\DataBase\DataBase.cpp" />
+    <ClCompile Include="src\DataBase\msg-DS.cpp" />
+    <ClCompile Include="src\DataBase\msg-DSUtils.cpp" />
+    <ClCompile Include="src\DataBase\msg-GC.cpp" />
+    <ClCompile Include="src\DataBase\msg-GCUtils.cpp" />
+    <ClCompile Include="src\DataBase\msg-GL.cpp" />
+    <ClCompile Include="src\DataBase\msg-GLUtils.cpp" />
+    <ClCompile Include="src\DataBase\msg-JD.cpp" />
+    <ClCompile Include="src\DataBase\msg-JDUtils.cpp" />
+    <ClCompile Include="src\DataBase\msg-JK.cpp" />
+    <ClCompile Include="src\DataBase\msg-JKUtils.cpp" />
+    <ClCompile Include="src\DataBase\msg-LS.cpp" />
+    <ClCompile Include="src\DataBase\msg-LSUtils.cpp" />
+    <ClCompile Include="src\DataBase\msg-SJ.cpp" />
+    <ClCompile Include="src\DataBase\msg-SJUtils.cpp" />
+    <ClCompile Include="src\DataBase\msg-SV.cpp" />
+    <ClCompile Include="src\DataBase\msg-SVUtils.cpp" />
+    <ClCompile Include="src\DataBase\msg-ZB.cpp" />
+    <ClCompile Include="src\DataBase\msg-ZBUtils.cpp" />
+    <ClCompile Include="src\Data\TcpMsgQueue.cpp" />
+    <ClCompile Include="src\DecomposeMgr\CabFNFHWF.cpp" />
+    <ClCompile Include="src\DecomposeMgr\DecomposeFitting.cpp" />
+    <ClCompile Include="src\DecomposeMgr\FittingInfo.cpp" />
+    <ClCompile Include="src\DecomposeMgr\CabBoard.cpp" />
+    <ClCompile Include="src\DecomposeMgr\CabBoardGap.cpp" />
+    <ClCompile Include="src\DecomposeMgr\CabBoardSeal.cpp" />
+    <ClCompile Include="src\DecomposeMgr\CabDoorBoardGap.cpp" />
+    <ClCompile Include="src\DecomposeMgr\CabDoorBoardSeal.cpp" />
+    <ClCompile Include="src\DecomposeMgr\CabDoorHWF.cpp" />
+    <ClCompile Include="src\DecomposeMgr\CabDoorHandle.cpp" />
+    <ClCompile Include="src\DecomposeMgr\CabDoorSlide.cpp" />
+    <ClCompile Include="src\DecomposeMgr\CabDoorUnit.cpp" />
+    <ClCompile Include="src\DecomposeMgr\CabDoorBoard.cpp" />
+    <ClCompile Include="src\DecomposeMgr\CabFNF.cpp" />
+    <ClCompile Include="src\DecomposeMgr\CabFNFDoorBoardSealInfo.cpp" />
+    <ClCompile Include="src\DecomposeMgr\CabFNFPart_Board.cpp" />
+    <ClCompile Include="src\DecomposeMgr\CabFNFPart_Objects.cpp" />
+    <ClCompile Include="src\DecomposeMgr\CabFoot.cpp" />
+    <ClCompile Include="src\DecomposeMgr\Cabinet.cpp" />
+    <ClCompile Include="src\DecomposeMgr\CabDoorSys.cpp" />
+    <ClCompile Include="src\DecomposeMgr\DecomposeMgr.cpp" />
+    <ClCompile Include="src\DecomposeMgr\DecorBoard.cpp" />
+    <ClCompile Include="src\DecomposeMgr\DecorBoardUnit_DoorBoardGap.cpp" />
+    <ClCompile Include="src\DecomposeMgr\DecorBoardUnit_DoorBoardSeal.cpp" />
+    <ClCompile Include="src\DecomposeMgr\DecorBoardUnit_DoorHandle.cpp" />
+    <ClCompile Include="src\DecomposeMgr\DecorBoardUnit_DoorUnit.cpp" />
+    <ClCompile Include="src\DecomposeMgr\DecorBoardUnit_DoorBoard.cpp" />
+    <ClCompile Include="src\DecomposeMgr\DecorBoardUnit_Board.cpp" />
+    <ClCompile Include="src\DecomposeMgr\DecorBoardUnit_BoardtSeal.cpp" />
+    <ClCompile Include="src\DecomposeMgr\DecorLine_Special.cpp" />
+    <ClCompile Include="src\DecomposeMgr\DecorLine.cpp" />
+    <ClCompile Include="src\DecomposeMgr\OrderInfo.cpp" />
+    <ClCompile Include="src\DecomposeMgr\PackInfo.cpp" />
+    <ClCompile Include="src\DecomposeMgr\HWFInfo.cpp" />
+    <ClCompile Include="src\DecomposeMgr\Product.cpp" />
+    <ClCompile Include="src\DecomposeMgr\DecorRoom.cpp" />
+    <ClCompile Include="src\DecomposeMgr\Table.cpp" />
+    <ClCompile Include="src\DecomposeMgr\TablePart.cpp" />
+    <ClCompile Include="src\DecomposeMgr\TablePartToBoard.cpp" />
+    <ClCompile Include="src\DecomposeMgr\WallDecor.cpp" />
+    <ClCompile Include="src\moriServer\moriServer.cpp" />
+    <ClCompile Include="src\MsgCallBack\IMsgCallBack.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_DELETE.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_DROP.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_FINANCE_EXAMINE_DONE.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_FINANCE_EXAMINE_WAIT.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_GRAPH_EXAMINE_FAIL.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_GRAPH_EXAMINE_DURING.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_GRAPH_EXAMINE_DONE.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_LIST_EXAMINE_DURING.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_LIST_EXAMINE_FAIL.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_LIST_EXAMINE_WAIT.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_SAVE.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_EXAMINE_WAIT.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_SHOP_EXAMINE_DONE.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_SHOP_EXAMINE_DURING.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_SHOP_EXAMINE_FAIL.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_SHOP_EXAMINE_WAIT.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_ZB_COMMIT_WAIT.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_ZB_LIST_EXAMINE_DURING.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_ZB_LIST_EXAMINE_FAIL.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_ZB_LIST_EXAMINE_WAIT.cpp" />
+    <ClCompile Include="src\OrderFlow\EOS_ZB_SAVE.cpp" />
+    <ClCompile Include="src\OrderFlow\IOrderState.cpp" />
+    <ClCompile Include="src\OrderFlow\Tool\DSTool.cpp" />
+    <ClCompile Include="src\OrderFlow\Tool\GCTool.cpp" />
+    <ClCompile Include="src\OrderFlow\Tool\LSTool.cpp" />
+    <ClCompile Include="src\OrderFlow\Tool\SJTool.cpp" />
+    <ClCompile Include="src\OrderFlow\Tool\ZBTool.cpp" />
+    <ClCompile Include="src\Processor\DownloadInfo.cpp" />
+    <ClCompile Include="src\Processor\DownloadLib.cpp" />
+    <ClCompile Include="src\Processor\DownloadPrintTemplateRes.cpp" />
+    <ClCompile Include="src\Processor\GetAppVersion.cpp" />
+    <ClCompile Include="src\Processor\GetLibStatus.cpp" />
+    <ClCompile Include="src\Processor\DownloadRes.cpp" />
+    <ClCompile Include="src\Processor\DownloadOrder.cpp" />
+    <ClCompile Include="src\Processor\GetOrderInfo.cpp" />
+    <ClCompile Include="src\Processor\GetOrderLog.cpp" />
+    <ClCompile Include="src\Processor\GetOrderStatus.cpp" />
+    <ClCompile Include="src\Processor\HeartBeat.cpp" />
+    <ClCompile Include="src\Processor\ProcessorCommon.cpp" />
+    <ClCompile Include="src\Processor\Login.cpp" />
+    <ClCompile Include="src\Processor\Logout.cpp" />
+    <ClCompile Include="src\Processor\ResetOrder.cpp" />
+    <ClCompile Include="src\Processor\Test.cpp" />
+    <ClCompile Include="src\Processor\TransferOrder.cpp" />
+    <ClCompile Include="src\Processor\UpdateOrder.cpp" />
+    <ClCompile Include="src\Processor\UploadASData.cpp" />
+    <ClCompile Include="src\Processor\UploadDesignConfig.cpp" />
+    <ClCompile Include="src\Processor\UploadLib.cpp" />
+    <ClCompile Include="src\Processor\UploadPrintTemplate.cpp" />
+    <ClCompile Include="src\Processor\UploadRes.cpp" />
+    <ClCompile Include="src\Processor\UploadOrder.cpp" />
+    <ClCompile Include="src\Verification\SafeIDMap.cpp" />
+    <ClCompile Include="transMsg\DownloadInfo.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\DownloadLib.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\DownloadOrder.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXP|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXPMySql|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\DownloadPrintTemplateRes.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXP|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXPMySql|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\DownloadRes.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\EOrderState.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXP|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXPMySql|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\EReturnStatus.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\ETableType.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXP|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXPMySql|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\GetAppVersion.pb.cc" />
+    <ClCompile Include="transMsg\GetLibStatus.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\GetOrderInfo.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXP|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXPMySql|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\GetOrderLog.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXP|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXPMySql|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\GetOrderStatus.pb.cc" />
+    <ClCompile Include="transMsg\HeartBeat.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\Login.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\Logout.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-DS.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-GC.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-GL.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-JD.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXP|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXPMySql|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-JK.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-LS.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXP|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXPMySql|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-SJ.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-SV.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4996</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelMySql|Win32'">4996</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelService|Win32'">4996</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXP|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXPMySql|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-ZB.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXP|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXPMySql|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\ResetOrder.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\Test.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXP|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXPMySql|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\TransferOrder.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\UpdateOrder.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\UploadASData.pb.cc" />
+    <ClCompile Include="transMsg\UploadDesignConfig.pb.cc" />
+    <ClCompile Include="transMsg\UploadLib.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\UploadOrder.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXP|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='RelXPMySql|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\UploadPrintTemplate.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="transMsg\UploadRes.pb.cc">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgMySql|Win32'">
+      </DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='DbgService|Win32'">
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ChargingSystem\ChargingSystem.h" />
+    <ClInclude Include="src\Codec\Codec.h" />
+    <ClInclude Include="src\Codec\Codec.pb.h" />
+    <ClInclude Include="src\Codec\EClientType.pb.h" />
+    <ClInclude Include="src\Codec\UserVCode.pb.h" />
+    <ClInclude Include="src\Config\ConfigMgr.h" />
+    <ClInclude Include="src\DataBase\DataBase.h" />
+    <ClInclude Include="src\DataBase\msg-DS.h" />
+    <ClInclude Include="src\DataBase\msg-DSUtils.h" />
+    <ClInclude Include="src\DataBase\msg-GC.h" />
+    <ClInclude Include="src\DataBase\msg-GCUtils.h" />
+    <ClInclude Include="src\DataBase\msg-GL.h" />
+    <ClInclude Include="src\DataBase\msg-GLUtils.h" />
+    <ClInclude Include="src\DataBase\msg-JD.h" />
+    <ClInclude Include="src\DataBase\msg-JDUtils.h" />
+    <ClInclude Include="src\DataBase\msg-JK.h" />
+    <ClInclude Include="src\DataBase\msg-JKUtils.h" />
+    <ClInclude Include="src\DataBase\msg-LS.h" />
+    <ClInclude Include="src\DataBase\msg-LSUtils.h" />
+    <ClInclude Include="src\DataBase\msg-SJ.h" />
+    <ClInclude Include="src\DataBase\msg-SJUtils.h" />
+    <ClInclude Include="src\DataBase\msg-SV.h" />
+    <ClInclude Include="src\DataBase\msg-SVUtils.h" />
+    <ClInclude Include="src\DataBase\msg-ZB.h" />
+    <ClInclude Include="src\DataBase\msg-ZBUtils.h" />
+    <ClInclude Include="src\Data\BlockQueue.h" />
+    <ClInclude Include="src\Data\TcpMessageFwd.h" />
+    <ClInclude Include="src\Data\TcpMsgQueue.h" />
+    <ClInclude Include="src\Data\TcpMessage.h" />
+    <ClInclude Include="src\Data\TcpMsgQueueFwd.h" />
+    <ClInclude Include="src\DecomposeMgr\DecomposeFitting.h" />
+    <ClInclude Include="src\DecomposeMgr\DecomposeInfo.h" />
+    <ClInclude Include="src\DecomposeMgr\DecomposeInfoFwd.h" />
+    <ClInclude Include="src\DecomposeMgr\DecomposeMgr.h" />
+    <ClInclude Include="src\DecomposeMgr\DecomposeTable.h" />
+    <ClInclude Include="src\DecomposeMgr\DecomposeUtil.h" />
+    <ClInclude Include="src\moriServer\moriServer.h" />
+    <ClInclude Include="src\moriServer\moriServerFwd.h" />
+    <ClInclude Include="src\MsgCallBack\CMsgCallBack.h" />
+    <ClInclude Include="src\MsgCallBack\IMsgCallBack.h" />
+    <ClInclude Include="src\OrderFlow\COrderState.h" />
+    <ClInclude Include="src\OrderFlow\IOrderState.h" />
+    <ClInclude Include="src\OrderFlow\Tool\DSTool.h" />
+    <ClInclude Include="src\OrderFlow\Tool\GCTool.h" />
+    <ClInclude Include="src\OrderFlow\Tool\LSTool.h" />
+    <ClInclude Include="src\OrderFlow\Tool\SJTool.h" />
+    <ClInclude Include="src\OrderFlow\Tool\ZBTool.h" />
+    <ClInclude Include="src\Processor\DBValue.h" />
+    <ClInclude Include="src\Processor\ProcessorCommon.h" />
+    <ClInclude Include="src\Processor\SUserInfo.h" />
+    <ClInclude Include="src\Verification\SafeIDMap.h" />
+    <ClInclude Include="transMsg\DownloadInfo.pb.h" />
+    <ClInclude Include="transMsg\DownloadLib.pb.h" />
+    <ClInclude Include="transMsg\DownloadOrder.pb.h" />
+    <ClInclude Include="transMsg\DownloadPrintTemplateRes.pb.h" />
+    <ClInclude Include="transMsg\DownloadRes.pb.h" />
+    <ClInclude Include="transMsg\EOrderState.pb.h" />
+    <ClInclude Include="transMsg\EReturnStatus.pb.h" />
+    <ClInclude Include="transMsg\ETableType.pb.h" />
+    <ClInclude Include="transMsg\GetAppVersion.pb.h" />
+    <ClInclude Include="transMsg\GetLibStatus.pb.h" />
+    <ClInclude Include="transMsg\GetOrderInfo.pb.h" />
+    <ClInclude Include="transMsg\GetOrderLog.pb.h" />
+    <ClInclude Include="transMsg\GetOrderStatus.pb.h" />
+    <ClInclude Include="transMsg\HeartBeat.pb.h" />
+    <ClInclude Include="transMsg\Login.pb.h" />
+    <ClInclude Include="transMsg\Logout.pb.h" />
+    <ClInclude Include="transMsg\msg-DS.pb.h" />
+    <ClInclude Include="transMsg\msg-GC.pb.h" />
+    <ClInclude Include="transMsg\msg-GL.pb.h" />
+    <ClInclude Include="transMsg\msg-JD.pb.h" />
+    <ClInclude Include="transMsg\msg-JK.pb.h" />
+    <ClInclude Include="transMsg\msg-LS.pb.h" />
+    <ClInclude Include="transMsg\msg-SJ.pb.h" />
+    <ClInclude Include="transMsg\msg-SV.pb.h" />
+    <ClInclude Include="transMsg\msg-ZB.pb.h" />
+    <ClInclude Include="transMsg\ResetOrder.pb.h" />
+    <ClInclude Include="transMsg\Test.pb.h" />
+    <ClInclude Include="transMsg\TransferOrder.pb.h" />
+    <ClInclude Include="transMsg\UpdateOrder.pb.h" />
+    <ClInclude Include="transMsg\UploadASData.pb.h" />
+    <ClInclude Include="transMsg\UploadDesignConfig.pb.h" />
+    <ClInclude Include="transMsg\UploadLib.pb.h" />
+    <ClInclude Include="transMsg\UploadOrder.pb.h" />
+    <ClInclude Include="transMsg\UploadPrintTemplate.pb.h" />
+    <ClInclude Include="transMsg\UploadRes.pb.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

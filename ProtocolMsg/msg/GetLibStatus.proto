@@ -1,0 +1,20 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+import "msg-GL.proto";
+
+//建库端直接返回所有的库状态
+//设计端可指定vercodes列表
+message		QGetLibStatus
+{	
+	optional	int64		BeginTime	= 11;	//TODO
+	optional	int64		EndTime		= 12;	//TODO
+	repeated	int64		VerCodes	= 13[packed=true];
+}
+
+message		AGetLibStatus
+{	
+	required	EReturnStatus	Stats			= 1;
+	repeated	GL_SugarVerInfo	GL_SugarVerInfo	= 101;
+	repeated	string			HashCodes		= 102;
+}

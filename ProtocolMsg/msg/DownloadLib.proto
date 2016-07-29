@@ -1,0 +1,18 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+import "msg-JK.proto";
+
+message		QDownloadLib
+{	
+	repeated	int64			VerCodes			= 1[packed=true];	//需要下载的库版本列表
+}
+
+message		ADownloadLib
+{	
+	required	EReturnStatus	Stats				= 1;
+	
+	repeated	int64			RejectedVerCodes	= 3[packed=true];	//服务器拒绝提供的版本列表
+	
+	repeated	JK_Table		JK_Table			= 101;
+}

@@ -1,0 +1,14 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+import "EOrderState.proto";
+
+message		QTest
+{
+	optional	order.EOrderState	toState = 1 [default=EOS_FACTORY_EXAMINE_WAIT];
+}
+
+message		ATest
+{	
+	required	EReturnStatus	Stats			= 1;
+}

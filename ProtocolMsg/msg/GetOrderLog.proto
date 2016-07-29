@@ -1,0 +1,16 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+import "msg-SV.proto";
+
+
+message		QGetOrderLog
+{	
+	required	int64			OrderID			= 1;
+}
+
+message		AGetOrderLog
+{	
+	required	EReturnStatus				Stats		= 1;
+	repeated	SV_OrderActionRecordInfo	OrderLog	= 2;
+}

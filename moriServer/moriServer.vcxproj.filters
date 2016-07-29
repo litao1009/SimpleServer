@@ -1,0 +1,826 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\Data">
+      <UniqueIdentifier>{43110bd1-3afa-42cc-ba50-5e6cfe95561d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\MsgCallBack">
+      <UniqueIdentifier>{5e019cbb-9baf-462a-a625-2e396c70a99f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\moriServer">
+      <UniqueIdentifier>{14a7242b-8b67-45da-aeb8-67bd0bffd3b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Config">
+      <UniqueIdentifier>{2147a053-7eff-4139-ae7a-5db49fa94083}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Codec">
+      <UniqueIdentifier>{d849e042-c273-47b2-a364-8e5a42eff360}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Verification">
+      <UniqueIdentifier>{c6b07ff0-5f9b-4d55-ac69-1f00f9d72e48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DataBase">
+      <UniqueIdentifier>{8c9db278-32fa-4b7b-abb5-0e75fbb81f32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transMsg">
+      <UniqueIdentifier>{e092ec83-20a6-4b8b-9fb1-75302a0d669f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Processor">
+      <UniqueIdentifier>{841e1b33-34ee-4d36-97ce-c9302421b6e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Processor\include">
+      <UniqueIdentifier>{52f2feca-49dd-4ed4-bfca-e0d75493788e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OrderFlow">
+      <UniqueIdentifier>{a2d77748-63f3-4fe4-81b5-d8ff0960b458}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ChargingSystem">
+      <UniqueIdentifier>{c1508a7f-d78a-48de-b74c-9f1b1f8719dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DecomposeMgr">
+      <UniqueIdentifier>{38570d7f-4f6c-421b-bfe9-fb45ce62da3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DecomposeMgr\Cabinet">
+      <UniqueIdentifier>{c83d14a3-198a-411d-bb6e-34bb6777c5d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DecomposeMgr\DecorBoard">
+      <UniqueIdentifier>{bcefe9c0-590e-4f01-b53e-73aa0090a3c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DecomposeMgr\DecorLine">
+      <UniqueIdentifier>{925bd7eb-46e4-4c05-a4ba-711ec126d83c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DecomposeMgr\CabFNF">
+      <UniqueIdentifier>{1f2a21a9-d6f5-4b68-9908-b9e8f015e214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DecomposeMgr\ProductInfo">
+      <UniqueIdentifier>{d210b9d3-714f-4213-bbd6-8637a507781a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DecomposeMgr\Table">
+      <UniqueIdentifier>{d4920d42-8da8-437f-aa84-e4274e1bd090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DecomposeMgr\FittingInfo">
+      <UniqueIdentifier>{16216499-e0fc-43b1-b15e-f8061cc7453a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DecomposeMgr\PackInfo">
+      <UniqueIdentifier>{cefcc903-742c-4ca6-8550-33e9f4a1601d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DecomposeMgr\HWFInfo">
+      <UniqueIdentifier>{aad4d3d5-651e-4ab7-a199-57c44edefa54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DecomposeMgr\DecorRoom">
+      <UniqueIdentifier>{9772b264-2077-4462-80fe-347d5682f18a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DecomposeMgr\WallDecor">
+      <UniqueIdentifier>{e93b13d3-27c6-4d93-b7b3-6900377ba730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DecomposeMgr\OrderInfo">
+      <UniqueIdentifier>{59a18bae-122e-41a8-9ce2-fac6c34b6bf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OrderFlow\Tool">
+      <UniqueIdentifier>{b07615cd-c702-4060-8a48-caff3e62c4ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OrderFlow\Ordinary">
+      <UniqueIdentifier>{c73f26d1-67df-47c9-ad35-3f2a01b63c50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OrderFlow\ZB">
+      <UniqueIdentifier>{f7e543bb-1eb0-4bc2-bd8c-f63b29277f81}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\MsgCallBack\IMsgCallBack.cpp">
+      <Filter>src\MsgCallBack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\moriServer\moriServer.cpp">
+      <Filter>src\moriServer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Config\ConfigMgr.cpp">
+      <Filter>src\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Data\TcpMsgQueue.cpp">
+      <Filter>src\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Codec\Codec.cpp">
+      <Filter>src\Codec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Codec\Codec.pb.cc">
+      <Filter>src\Codec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Verification\SafeIDMap.cpp">
+      <Filter>src\Verification</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\DataBase.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\EReturnStatus.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\ProcessorCommon.cpp">
+      <Filter>src\Processor\include</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\UploadLib.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Codec\EClientType.pb.cc">
+      <Filter>src\Codec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\UploadLib.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\Logout.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\Login.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\Login.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\Logout.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\DownloadLib.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\UploadRes.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\UploadRes.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\DownloadLib.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\DownloadRes.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\DownloadRes.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\DownloadInfo.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\HeartBeat.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\HeartBeat.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\DownloadInfo.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\IOrderState.cpp">
+      <Filter>src\OrderFlow</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\TransferOrder.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\GetLibStatus.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\GetLibStatus.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-GL.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-JK.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-SJ.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\UploadPrintTemplate.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\UploadPrintTemplate.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-DS.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-GC.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\ResetOrder.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\TransferOrder.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\ResetOrder.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\UpdateOrder.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\UpdateOrder.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ChargingSystem\ChargingSystem.cpp">
+      <Filter>src\ChargingSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\DecomposeMgr.cpp">
+      <Filter>src\DecomposeMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-SV.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-JD.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\DownloadPrintTemplateRes.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\DownloadPrintTemplateRes.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\GetOrderInfo.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\GetOrderInfo.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\CabBoard.cpp">
+      <Filter>src\DecomposeMgr\Cabinet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\CabBoardGap.cpp">
+      <Filter>src\DecomposeMgr\Cabinet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\CabBoardSeal.cpp">
+      <Filter>src\DecomposeMgr\Cabinet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\CabDoorBoardGap.cpp">
+      <Filter>src\DecomposeMgr\Cabinet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\CabDoorBoardSeal.cpp">
+      <Filter>src\DecomposeMgr\Cabinet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\CabDoorHandle.cpp">
+      <Filter>src\DecomposeMgr\Cabinet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\CabDoorSlide.cpp">
+      <Filter>src\DecomposeMgr\Cabinet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\CabDoorUnit.cpp">
+      <Filter>src\DecomposeMgr\Cabinet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\CabDoorBoard.cpp">
+      <Filter>src\DecomposeMgr\Cabinet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\CabFoot.cpp">
+      <Filter>src\DecomposeMgr\Cabinet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\Cabinet.cpp">
+      <Filter>src\DecomposeMgr\Cabinet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\DecorBoard.cpp">
+      <Filter>src\DecomposeMgr\DecorBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\CabFNF.cpp">
+      <Filter>src\DecomposeMgr\CabFNF</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\CabFNFPart_Objects.cpp">
+      <Filter>src\DecomposeMgr\CabFNF</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\CabFNFPart_Board.cpp">
+      <Filter>src\DecomposeMgr\CabFNF</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\CabFNFDoorBoardSealInfo.cpp">
+      <Filter>src\DecomposeMgr\CabFNF</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\Product.cpp">
+      <Filter>src\DecomposeMgr\ProductInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\Table.cpp">
+      <Filter>src\DecomposeMgr\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\CabDoorSys.cpp">
+      <Filter>src\DecomposeMgr\Cabinet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\CabDoorHWF.cpp">
+      <Filter>src\DecomposeMgr\Cabinet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\DecorBoardUnit_Board.cpp">
+      <Filter>src\DecomposeMgr\DecorBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\DecorBoardUnit_BoardtSeal.cpp">
+      <Filter>src\DecomposeMgr\DecorBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\DecorBoardUnit_DoorUnit.cpp">
+      <Filter>src\DecomposeMgr\DecorBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\DecorBoardUnit_DoorBoard.cpp">
+      <Filter>src\DecomposeMgr\DecorBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\DecorBoardUnit_DoorBoardGap.cpp">
+      <Filter>src\DecomposeMgr\DecorBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\DecorBoardUnit_DoorBoardSeal.cpp">
+      <Filter>src\DecomposeMgr\DecorBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\DecorBoardUnit_DoorHandle.cpp">
+      <Filter>src\DecomposeMgr\DecorBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\DecorLine.cpp">
+      <Filter>src\DecomposeMgr\DecorLine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\DecorLine_Special.cpp">
+      <Filter>src\DecomposeMgr\DecorLine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\FittingInfo.cpp">
+      <Filter>src\DecomposeMgr\FittingInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\PackInfo.cpp">
+      <Filter>src\DecomposeMgr\PackInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\HWFInfo.cpp">
+      <Filter>src\DecomposeMgr\HWFInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\DecorRoom.cpp">
+      <Filter>src\DecomposeMgr\DecorRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\TablePart.cpp">
+      <Filter>src\DecomposeMgr\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\TablePartToBoard.cpp">
+      <Filter>src\DecomposeMgr\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\WallDecor.cpp">
+      <Filter>src\DecomposeMgr\WallDecor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\DecomposeFitting.cpp">
+      <Filter>src\DecomposeMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-ZB.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\OrderInfo.cpp">
+      <Filter>src\DecomposeMgr\OrderInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\DownloadOrder.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\UploadOrder.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\DownloadOrder.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\UploadOrder.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\msg-LS.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\EOrderState.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\ETableType.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\Test.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\Test.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\Tool\SJTool.cpp">
+      <Filter>src\OrderFlow\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\Tool\DSTool.cpp">
+      <Filter>src\OrderFlow\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\Tool\GCTool.cpp">
+      <Filter>src\OrderFlow\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_EXAMINE_WAIT.cpp">
+      <Filter>src\OrderFlow\Ordinary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_GRAPH_EXAMINE_DONE.cpp">
+      <Filter>src\OrderFlow\Ordinary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_GRAPH_EXAMINE_DURING.cpp">
+      <Filter>src\OrderFlow\Ordinary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_GRAPH_EXAMINE_FAIL.cpp">
+      <Filter>src\OrderFlow\Ordinary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_LIST_EXAMINE_WAIT.cpp">
+      <Filter>src\OrderFlow\Ordinary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_SAVE.cpp">
+      <Filter>src\OrderFlow\Ordinary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_SHOP_EXAMINE_DONE.cpp">
+      <Filter>src\OrderFlow\Ordinary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_SHOP_EXAMINE_DURING.cpp">
+      <Filter>src\OrderFlow\Ordinary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_SHOP_EXAMINE_WAIT.cpp">
+      <Filter>src\OrderFlow\Ordinary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_ZB_SAVE.cpp">
+      <Filter>src\OrderFlow\ZB</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\Tool\ZBTool.cpp">
+      <Filter>src\OrderFlow\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_ZB_COMMIT_WAIT.cpp">
+      <Filter>src\OrderFlow\ZB</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_LIST_EXAMINE_DURING.cpp">
+      <Filter>src\OrderFlow\Ordinary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\Tool\LSTool.cpp">
+      <Filter>src\OrderFlow\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_LIST_EXAMINE_FAIL.cpp">
+      <Filter>src\OrderFlow\Ordinary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_FINANCE_EXAMINE_DONE.cpp">
+      <Filter>src\OrderFlow\Ordinary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_FACTORY_FINANCE_EXAMINE_WAIT.cpp">
+      <Filter>src\OrderFlow\Ordinary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_ZB_LIST_EXAMINE_WAIT.cpp">
+      <Filter>src\OrderFlow\ZB</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_ZB_LIST_EXAMINE_DURING.cpp">
+      <Filter>src\OrderFlow\ZB</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_ZB_LIST_EXAMINE_FAIL.cpp">
+      <Filter>src\OrderFlow\ZB</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\GetOrderLog.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\GetOrderLog.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_DELETE.cpp">
+      <Filter>src\OrderFlow\Ordinary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_DROP.cpp">
+      <Filter>src\OrderFlow\Ordinary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OrderFlow\EOS_SHOP_EXAMINE_FAIL.cpp">
+      <Filter>src\OrderFlow\Ordinary</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\GetOrderStatus.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\GetOrderStatus.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\GetAppVersion.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\GetAppVersion.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-DS.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-DSUtils.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-GC.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-GCUtils.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-GL.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-GLUtils.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-JD.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-JDUtils.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-JK.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-JKUtils.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-LS.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-LSUtils.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-SJ.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-SV.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-SVUtils.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-ZB.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-ZBUtils.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\UploadASData.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\UploadASData.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DataBase\msg-SJUtils.cpp">
+      <Filter>src\DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DecomposeMgr\CabFNFHWF.cpp">
+      <Filter>src\DecomposeMgr\CabFNF</Filter>
+    </ClCompile>
+    <ClCompile Include="transMsg\UploadDesignConfig.pb.cc">
+      <Filter>transMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Processor\UploadDesignConfig.cpp">
+      <Filter>src\Processor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Codec\UserVCode.pb.cc">
+      <Filter>src\Codec</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Data\BlockQueue.h">
+      <Filter>src\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MsgCallBack\CMsgCallBack.h">
+      <Filter>src\MsgCallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MsgCallBack\IMsgCallBack.h">
+      <Filter>src\MsgCallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="src\moriServer\moriServer.h">
+      <Filter>src\moriServer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Config\ConfigMgr.h">
+      <Filter>src\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Data\TcpMessage.h">
+      <Filter>src\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\moriServer\moriServerFwd.h">
+      <Filter>src\moriServer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Data\TcpMsgQueue.h">
+      <Filter>src\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Data\TcpMsgQueueFwd.h">
+      <Filter>src\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Data\TcpMessageFwd.h">
+      <Filter>src\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Codec\Codec.h">
+      <Filter>src\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Codec\Codec.pb.h">
+      <Filter>src\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Verification\SafeIDMap.h">
+      <Filter>src\Verification</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\DataBase.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\EReturnStatus.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Processor\DBValue.h">
+      <Filter>src\Processor\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Processor\ProcessorCommon.h">
+      <Filter>src\Processor\include</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\UploadLib.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Codec\EClientType.pb.h">
+      <Filter>src\Codec</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\Login.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\Logout.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\DownloadLib.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\UploadRes.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\DownloadRes.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\DownloadInfo.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\HeartBeat.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OrderFlow\IOrderState.h">
+      <Filter>src\OrderFlow</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OrderFlow\COrderState.h">
+      <Filter>src\OrderFlow</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\GetLibStatus.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\msg-GL.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\msg-JK.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\msg-SJ.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\UploadPrintTemplate.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\msg-DS.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\msg-GC.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\ResetOrder.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\TransferOrder.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\UpdateOrder.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ChargingSystem\ChargingSystem.h">
+      <Filter>src\ChargingSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DecomposeMgr\DecomposeMgr.h">
+      <Filter>src\DecomposeMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Processor\SUserInfo.h">
+      <Filter>src\Processor\include</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\msg-SV.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\msg-JD.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\DownloadPrintTemplateRes.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\GetOrderInfo.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DecomposeMgr\DecomposeTable.h">
+      <Filter>src\DecomposeMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DecomposeMgr\DecomposeInfo.h">
+      <Filter>src\DecomposeMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DecomposeMgr\DecomposeInfoFwd.h">
+      <Filter>src\DecomposeMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DecomposeMgr\DecomposeUtil.h">
+      <Filter>src\DecomposeMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\msg-ZB.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\DownloadOrder.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\UploadOrder.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\msg-LS.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\EOrderState.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\ETableType.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\Test.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OrderFlow\Tool\SJTool.h">
+      <Filter>src\OrderFlow\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OrderFlow\Tool\DSTool.h">
+      <Filter>src\OrderFlow\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OrderFlow\Tool\GCTool.h">
+      <Filter>src\OrderFlow\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OrderFlow\Tool\ZBTool.h">
+      <Filter>src\OrderFlow\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OrderFlow\Tool\LSTool.h">
+      <Filter>src\OrderFlow\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\GetOrderLog.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\GetOrderStatus.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\GetAppVersion.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-DS.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-DSUtils.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-GC.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-GCUtils.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-GL.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-GLUtils.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-JD.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-JDUtils.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-JK.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-JKUtils.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-LS.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-LSUtils.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-SJ.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-SV.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-SVUtils.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-ZB.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-ZBUtils.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\UploadASData.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataBase\msg-SJUtils.h">
+      <Filter>src\DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="transMsg\UploadDesignConfig.pb.h">
+      <Filter>transMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DecomposeMgr\DecomposeFitting.h">
+      <Filter>src\DecomposeMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Codec\UserVCode.pb.h">
+      <Filter>src\Codec</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

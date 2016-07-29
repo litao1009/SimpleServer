@@ -1,0 +1,19 @@
+package moriMsg;
+
+message SMsgInfo
+{
+	required	int32	MsgLen		= 1;
+	required	int32	MsgChksum	= 2;
+}
+
+message	SFileInfo
+{
+	required	int32	FileLen		= 1;
+	required	int32	FileChksum	= 2;
+}
+
+message HeadInfo
+{
+	optional	SMsgInfo	MsgInfo	 	= 1;
+	repeated	SFileInfo	FilesInfo	= 2;
+}

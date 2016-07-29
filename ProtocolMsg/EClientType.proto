@@ -1,0 +1,13 @@
+package CodecProtocol;
+
+enum EClientType
+{
+	ECT_FACTORY_BUILD	= 2;
+	ECT_DESIGN			= 3;
+	ECT_DESIGN_BUILD	= 4;
+	ECT_PRINT_TEMPLATE	= 5;
+	ECT_REVIEW			= 6;
+	ECT_PRINT			= 7;
+	ECT_CRAFT_BUILD		= 8;
+	ECT_SERVER			= 9;
+}

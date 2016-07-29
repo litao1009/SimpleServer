@@ -1,0 +1,29 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+import "msg-GL.proto";
+
+message		QDownloadInfo
+{	
+	optional	bool	GL_AreaGeoMapInfo		=1	[default=false];
+	optional	bool	GL_AreaInfo				=2	[default=false];
+	optional	bool	GL_DeptInfo				=3	[default=false];
+	optional	bool	GL_DesignerConfigInfo	=4	[default=false];
+	optional	bool	GL_GTypeInfo			=5	[default=false];
+	optional	bool	GL_MajorCateInfo		=6	[default=false];
+	optional	bool	GL_MinorCateInfo		=7	[default=false];
+	optional	bool	GL_MinorGTypeMapInfo	=8	[default=false];
+	optional	bool	GL_GeoCodeInfo			=9	[default=false];
+	optional	bool	GL_UnitInfo				=10	[default=false];
+	optional	bool	GL_UserInfo				=11	[default=false];
+	optional	bool	GL_RoleRightInfo		=12	[default=false];
+	optional	bool	GL_PrintTemplateInfo	=13	[default=false];
+	optional	bool	GL_AppleseedInfo		=14	[default=false];
+}
+
+message		ADownloadInfo
+{	
+	required	EReturnStatus	Stats							= 1;
+	
+	optional	GL_Table		GL_Table						= 101;
+}

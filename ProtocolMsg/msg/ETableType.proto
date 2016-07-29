@@ -1,0 +1,11 @@
+package transMsg;
+
+enum	ETableType
+{
+	ETT_SJ_TABLE	= 1;	//设计表
+	ETT_DS_TABLE	= 2;	//店审表
+	ETT_GC_TABLE	= 3;	//图审表
+	ETT_ZB_TABLE	= 4;	//增补表
+	ETT_LS_TABLE	= 5;	//列审表
+	ETT_COUNT		= 6;
+}

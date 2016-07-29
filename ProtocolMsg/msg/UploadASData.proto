@@ -1,0 +1,20 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+
+message		ASDataInfo
+{
+	required	int32	ItemID		= 1;
+	required	string	ItemName	= 2;
+	required	bytes	ItemData	= 3;
+}
+
+message		QUploadASData
+{
+	repeated	ASDataInfo	ASDataInfo = 1;
+}
+
+message		AUploadASData
+{
+	required	EReturnStatus	Stats = 1;
+}

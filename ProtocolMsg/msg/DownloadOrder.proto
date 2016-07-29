@@ -1,0 +1,25 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+import "ETableType.proto";
+import "msg-GL.proto";
+
+message		SDownloadOrder
+{
+	required	ETableType		TableType		= 1;
+	required	bytes			OrderTable		= 101;	//SJ/DS/GC/ZB/LS
+	required	GL_OrderInfo	GL_OrderInfo	= 102;
+}
+
+message		QDownloadOrder
+{
+	required	ETableType		TableType	= 1;
+	required	int64			OrderID		= 2;
+}
+
+message		ADownloadOrder
+{	
+	required	EReturnStatus	Stats			= 1;
+	
+	optional	SDownloadOrder	DownloadOrder	= 101;
+}

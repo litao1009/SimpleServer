@@ -1,0 +1,15 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+import "msg-GL.proto";
+
+
+message		QUploadDesignConfig
+{	
+	required	GL_DesignerConfigInfo	GL_DesignerConfigInfo = 1;
+}
+
+message		AUploadDesignConfig
+{	
+	required	EReturnStatus				Stats		= 1;
+}

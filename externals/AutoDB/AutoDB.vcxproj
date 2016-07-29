@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\AutoDB\Adaptor\SociAdaptor.h" />
+    <ClInclude Include="include\AutoDB\Column.h" />
+    <ClInclude Include="include\AutoDB\ColumnFwd.h" />
+    <ClInclude Include="include\AutoDB\ColumnOperator.h" />
+    <ClInclude Include="include\AutoDB\Function.h" />
+    <ClInclude Include="include\AutoDB\Optional.h" />
+    <ClInclude Include="include\AutoDB\SColumns.h" />
+    <ClInclude Include="include\AutoDB\SColumnsFwd.h" />
+    <ClInclude Include="include\AutoDB\Condition.h" />
+    <ClInclude Include="include\AutoDB\Config.h" />
+    <ClInclude Include="include\AutoDB\DBColumn.h" />
+    <ClInclude Include="include\AutoDB\Exchange.h" />
+    <ClInclude Include="include\AutoDB\Statement.h" />
+    <ClInclude Include="include\AutoDB\Table.h" />
+    <ClInclude Include="include\AutoDB\TableImpFwd.h" />
+    <ClInclude Include="include\AutoDB\Util.h" />
+    <ClInclude Include="src\ColumnImp.h" />
+    <ClInclude Include="src\ConditionImp.h" />
+    <ClInclude Include="src\StatementImp.h" />
+    <ClInclude Include="src\TableFwd.h" />
+    <ClInclude Include="src\TableImp.h" />
+    <ClInclude Include="src\ValueWrap.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Adaptor\SociAdaptor.cpp" />
+    <ClCompile Include="src\Column.cpp" />
+    <ClCompile Include="src\Function.cpp" />
+    <ClCompile Include="src\SColumns.cpp" />
+    <ClCompile Include="src\Condition.cpp" />
+    <ClCompile Include="src\DBColumn.cpp" />
+    <ClCompile Include="src\Statement.cpp" />
+    <ClCompile Include="src\Table.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{86DDCFC6-3091-4EE6-BA02-5FF44B19D660}</ProjectGuid>
+    <RootNamespace>AutoDB</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)include;$(ProjectDir)src;$(SolutionDir)externals/ProtocolBuf/include;$(SolutionDir)externals/SOCI/core/src;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)build\lib\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(ObjDir)</IntDir>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)include;$(ProjectDir)src;$(SolutionDir)externals/ProtocolBuf/include;$(SolutionDir)externals/SOCI/core/src;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)build\lib\$(ProjectName)\$(Configuration)$(Platform)\</OutDir>
+    <IntDir>$(ObjDir)</IntDir>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ProtocolBuf.lib;soci_core_static.lib;soci_odbc_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

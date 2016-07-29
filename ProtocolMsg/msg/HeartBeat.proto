@@ -1,0 +1,14 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+
+message QHeartBeat
+{
+	optional	int32		CurTime		= 1;
+};
+
+
+message AHeartBeat
+{
+	required	EReturnStatus	Stats		= 1;
+}

@@ -1,0 +1,19 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+import "msg-GL.proto";
+
+//程序版本信息获取函数
+message QGetAppVersion
+{
+	required	int32	AppVerID = 1;						//数据库中APP的版本ID(数据库全局唯一)
+	optional	bool	IsDownload = 2[default=false];	//是否需要下载文件放在消息内[默认不要文件]
+}
+
+message	AGetAppVersion
+{
+	required	EReturnStatus	Stats = 1;
+	
+	optional	GL_AppVerInfo	GL_AppVerInfo = 101;
+	
+}

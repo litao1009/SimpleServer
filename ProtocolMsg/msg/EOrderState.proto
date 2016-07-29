@@ -1,0 +1,44 @@
+package order;
+
+enum EOrderState
+{
+	EOS_LOCAL_UNSAVE		 			= 1;	//本地未保存
+	EOS_LOCAL_SAVE			 			= 2;	//本地已保存
+	
+	EOS_SAVE				 			= 3;	//服务器已保存
+	
+	EOS_SHOP_EXAMINE_WAIT				= 4;	//待店审
+	EOS_SHOP_EXAMINE_DURING				= 5;	//店审中
+	EOS_SHOP_EXAMINE_FAIL				= 6;	//店审未通过
+	EOS_SHOP_EXAMINE_DONE				= 7;	//店审通过
+	
+	EOS_FACTORY_EXAMINE_WAIT			= 8;	//待工厂审核
+	
+	EOS_FACTORY_GRAPH_EXAMINE_DURING	= 9;	//工厂图审中
+	EOS_FACTORY_GRAPH_EXAMINE_DONE		= 10;	//图审通过
+	EOS_FACTORY_GRAPH_EXAMINE_FAIL		= 11;	//图审未通过
+	
+	EOS_FACTORY_DECOMPOSE_WAIT			= 12;	//待解单
+	EOS_FACTORY_DECOMPOSE_DURING		= 13;	//解单中
+	EOS_FACTORY_DECOMPOSE_FAIL			= 14;	//解单失败
+
+	EOS_FACTORY_LIST_EXAMINE_WAIT		= 15;	//待列表审核
+	EOS_FACTORY_LIST_EXAMINE_DURING		= 16;	//列表审核中
+	EOS_FACTORY_LIST_EXAMINE_FAIL		= 17;	//列表未通过	
+	
+	EOS_ZB_SAVE							= 21;	//增补件服务器已保存
+	
+	EOS_ZB_COMMIT_WAIT					= 22;	//增补件待提交
+	
+	EOS_ZB_LIST_EXAMINE_WAIT			= 23;	//增补件待审
+	EOS_ZB_LIST_EXAMINE_DURING			= 24;	//增补件审核中		
+	EOS_ZB_LIST_EXAMINE_FAIL			= 25;	//增补件审核失败
+
+	EOS_FACTORY_FINANCE_EXAMINE_WAIT	= 29;	//待财务审核
+	EOS_FACTORY_FINANCE_EXAMINE_DONE	= 30;	//财务审核完成
+
+	EOS_DROP							= 31;	//废单
+	EOS_DELETE							= 32;	//删除订单
+	
+	EOS_COUNT							= 33;
+};

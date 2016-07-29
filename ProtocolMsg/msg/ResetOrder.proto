@@ -1,0 +1,14 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+
+
+message		QResetOrder
+{
+	required	int64			OrderID		= 1;
+}
+
+message		AResetOrder
+{	
+	required	EReturnStatus	Stats			= 1;
+}

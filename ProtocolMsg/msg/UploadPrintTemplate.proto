@@ -1,0 +1,14 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+import "msg-GL.proto";
+
+message		QUploadPrintTemplate
+{
+	repeated	GL_PrintTemplateInfo		GL_PrintTemplateInfo		= 1;
+}
+
+message		AUploadPrintTemplate
+{	
+	required	EReturnStatus	Stats		= 1;
+}

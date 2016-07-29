@@ -1,0 +1,1462 @@
+package transMsg;
+
+message	JK_CabBoardMatInfo
+{
+	required	int32	CabMatPlanID = 1;
+	required	int32	CabStructBoardID = 2;
+	required	bool	IsDefault = 3;
+	required	int32	MatID = 4;
+	required	int32	MatGType = 5;
+	required	int32	SealRuleID = 6;
+	required	int32	SkinDirection = 7;
+	required	int64	VerCode = 8;
+	required	int32	FactoryID = 9;
+	required	bool	IsUseDefaultSkinDirection = 10;
+}
+
+message	JK_CabBoardMatSkinInfo
+{
+	required	int32	CabMatPlanID = 1;
+	required	int32	CabStructBoardID = 2;
+	required	int32	SkinDirection = 3;
+	required	int64	VerCode = 4;
+	required	int32	FactoryID = 5;
+	required	bool	IsUseDefaultSkinDirection = 6;
+}
+
+message	JK_CabDesignBoardSealEdgeInfo
+{
+	required	int32	CabDesignBoardSealID = 1;
+	required	int32	SealIndex = 2;
+	required	int32	SealMatID = 3;
+	required	int64	VerCode = 4;
+	required	int32	FactoryID = 5;
+}
+
+message	JK_CabDesignBoardSealInfo
+{
+	required	int32	CabDesignBoardSealID = 1;
+	required	int32	CabStructBoardID = 2;
+	required	int32	CabStructID = 3;
+	required	int32	CabDesignID = 4;
+	required	int32	MaterialID = 5;
+	required	int64	VerCode = 6;
+	required	int32	FactoryID = 7;
+}
+
+message	JK_CabDesignDoorRegionHandleInfo
+{
+	required	int32	CabDesignDoorRegionHandleID = 1;
+	required	int32	CabDesignDoorRegionID = 2;
+	required	int32	XDock = 3;
+	required	int32	YDock = 4;
+	required	int32	ZDock = 5;
+	required	string	XOffsetFormula = 6;
+	required	string	YOffsetFormula = 7;
+	required	string	ZOffsetFormula = 8;
+	required	int64	VerCode = 9;
+	required	int32	FactoryID = 10;
+	required	double	ArcZ = 11;
+	required	int32	HandleID = 12;
+	required	int32	MatchType = 13;
+}
+
+message	JK_CabDesignDoorRegionInfo
+{
+	required	int32	CabDesignDoorRegionID = 1;
+	required	int32	CabDesignID = 2;
+	required	bool	IsDel = 3;
+	required	bool	IsGroup = 4;
+	required	double	XLen = 5;
+	required	double	YLen = 6;
+	required	bool	IsCanResize = 7;
+	required	double	MinXLen = 8;
+	required	double	MaxXLen = 9;
+	required	double	XLenStep = 10;
+	required	double	MinYLen = 11;
+	required	double	MaxYLen = 12;
+	required	double	YLenStep = 13;
+	required	int32	DefaultMatID = 14;
+	required	int32	DefaultModelID = 15;
+	required	int64	VerCode = 16;
+	required	int32	FactoryID = 17;
+	required	int32	DefaultDoorID = 18;
+	required	int32	CabDesignDoorSystemID = 19;
+	required	int32	DoorSystemID = 20;
+	required	bool	IsUseDefaultSize = 21;
+	required	bool	IsUseCutFormula = 22;
+	required	int32	DoorRegionID = 23;
+}
+
+message	JK_CabDesignDoorSystemInfo
+{
+	required	int32	CabDesignDoorSystemID = 1;
+	required	int32	CabDesignID = 2;
+	required	bool	IsDel = 3;
+	required	int64	VerCode = 4;
+	required	int32	FactoryID = 5;
+	required	int32	DoorSystemID = 6;
+	required	int32	InstallFaceType = 7;
+	required	double	XAdjustLen = 8;
+	required	double	YAdjustLen = 9;
+	required	int32	XDock = 10;
+	required	int32	YDock = 11;
+	required	int32	ZDock = 12;
+	required	string	XOffsetFormula = 13;
+	required	string	YOffsetFormula = 14;
+	required	string	ZOffsetFormula = 15;
+	required	int32	CreatorID = 16;
+	required	int32	UpdaterID = 17;
+	required	int64	CreateTime = 18;
+	required	int64	UpdateTime = 19;
+	required	bool	IsCanDel = 20;
+	required	string	XFormula = 21;
+	required	string	YFormula = 22;
+	required	double	ZLen = 23;
+}
+
+message	JK_CabDesignFNFittingInfo
+{
+	required	int32	CabDesignFNFittingID = 1;
+	required	int32	ContainerID = 2;
+	required	int32	ContainerGTypeID = 3;
+	required	bool	IsCanDel = 4;
+	required	string	XFormula = 5;
+	required	string	YFormula = 6;
+	required	string	ZFormula = 7;
+	required	int32	XDock = 8;
+	required	int32	YDock = 9;
+	required	int32	ZDock = 10;
+	required	string	XOffsetFormula = 11;
+	required	string	YOffsetFormula = 12;
+	required	string	ZOffsetFormula = 13;
+	required	int64	VerCode = 14;
+	required	int32	FactoryID = 15;
+	required	bool	IsDel = 16;
+	required	int32	CreatorID = 17;
+	required	int32	UpdaterID = 18;
+	required	int64	CreateTime = 19;
+	required	int64	UpdateTime = 20;
+}
+
+message	JK_CabDesignFNFittingMapInfo
+{
+	required	int32	FNFittingID = 1;
+	required	int32	CabDesignFNFittingID = 2;
+	required	bool	IsDefault = 3;
+	required	int32	FNType = 4;
+	required	int64	VerCode = 5;
+	required	int32	FactoryID = 6;
+}
+
+message	JK_CabDesignFootInfo
+{
+	required	int32	CabDesignID = 1;
+	required	int32	FootID = 2;
+	required	bool	IsDefault = 3;
+	required	int64	VerCode = 4;
+	required	int32	FactoryID = 5;
+}
+
+message	JK_CabDesignInfo
+{
+	required	int32	CabDesignID = 1;
+	required	bool	IsDel = 2;
+	required	int32	GroupID = 3;
+	required	int32	CabFunction = 4;
+	required	int32	CabStructID = 5;
+	required	int32	PosType = 6;
+	required	int32	FactoryID = 7;
+	required	int32	CreatorID = 8;
+	required	int32	UpdaterID = 9;
+	required	int64	CreateTime = 10;
+	required	int64	UpdateTime = 11;
+	required	string	CabDesignCode = 12;
+	required	string	CabDesignName = 13;
+	required	string	CabDesignMemo = 14;
+	required	int64	VerCode = 15;
+	required	int32	PhotoID = 16;
+	required	bool	IsActive = 17;
+}
+
+message	JK_CabDesignMatInfo
+{
+	required	int32	CabDesignID = 1;
+	required	int32	CabMatPlanID = 2;
+	required	bool	IsDefault = 3;
+	required	int64	VerCode = 4;
+	required	int32	FactoryID = 5;
+}
+
+message	JK_CabMatPlanInfo
+{
+	required	int32	CabMatPlanID = 1;
+	required	int32	GroupID = 2;
+	required	bool	IsDel = 3;
+	required	int32	FactoryID = 4;
+	required	int32	MatGType = 5;
+	required	int32	MatID = 6;
+	required	int32	CreatorID = 7;
+	required	int32	UpdaterID = 8;
+	required	int64	CreateTime = 9;
+	required	int64	UpdateTime = 10;
+	required	string	CabMatPlanCode = 11;
+	required	string	CabMatPlanName = 12;
+	required	string	CabMatPlanMemo = 13;
+	required	int64	VerCode = 14;
+}
+
+message	JK_CabStructBoardGapInfo
+{
+	required	int32	CabStructBoardGapID = 1;
+	required	int32	CabStructBoardID = 2;
+	required	int32	GapPos = 3;
+	required	int32	GapIndex = 4;
+	required	int32	GapType = 5;
+	required	int32	GapShape = 6;
+	required	string	XLenFormula = 7;
+	required	string	YLenFormula = 8;
+	required	string	XOffsetFormula = 9;
+	required	string	YOffsetFormula = 10;
+	required	string	ZOffsetFormula = 11;
+	required	int32	FactoryID = 12;
+	required	int32	CreatorID = 13;
+	required	int32	UpdaterID = 14;
+	required	int64	CreateTime = 15;
+	required	int64	UpdateTime = 16;
+	required	int64	VerCode = 17;
+}
+
+message	JK_CabStructBoardInfo
+{
+	required	int32	CabStructBoardID = 1;
+	required	int32	CabStructID = 2;
+	required	bool	IsDel = 3;
+	required	bool	IsUseMain = 4;
+	required	bool	IsCanRepeat = 5;
+	required	bool	IsCanDel = 6;
+	required	string	XFormula = 7;
+	required	string	YFormula = 8;
+	required	double	ArcX = 9;
+	required	double	ArcY = 10;
+	required	double	ArcZ = 11;
+	required	int32	XDock = 12;
+	required	int32	YDock = 13;
+	required	int32	ZDock = 14;
+	required	string	XOffsetFormula = 15;
+	required	string	YOffsetFormula = 16;
+	required	string	ZOffsetFormula = 17;
+	required	int32	FactoryID = 18;
+	required	int32	CreatorID = 19;
+	required	int32	UpdaterID = 20;
+	required	int64	CreateTime = 21;
+	required	int64	UpdateTime = 22;
+	required	string	CabStructBoardName = 23;
+	required	int32	DefaultSkinDirection = 24;
+	required	int64	VerCode = 25;
+}
+
+message	JK_CabStructBoardSealInfo
+{
+	required	int32	CabStructBoardSealID = 1;
+	required	int32	SealOrder = 2;
+	required	int32	CabStructBoardID = 3;
+	required	int32	SealType = 4;
+	required	int64	VerCode = 5;
+	required	int32	FactoryID = 6;
+	required	int32	CreatorID = 7;
+	required	int32	UpdaterID = 8;
+	required	int64	CreateTime = 9;
+	required	int64	UpdateTime = 10;
+	required	int32	SealIndex = 11;
+}
+
+message	JK_CabStructGapInfo
+{
+	required	int32	CabStructGapID = 1;
+	required	int32	CabStructID = 2;
+	required	bool	IsDel = 3;
+	required	int32	FactoryID = 4;
+	required	int32	CabGapType = 5;
+	required	int32	XDock = 6;
+	required	int32	YDock = 7;
+	required	int32	ZDock = 8;
+	required	string	XOffsetFormula = 9;
+	required	string	YOffsetFormula = 10;
+	required	string	ZOffsetFormula = 11;
+	required	string	XFormula = 12;
+	required	string	YFormula = 13;
+	required	string	ZFormula = 14;
+	required	string	XVar = 15;
+	required	string	YVar = 16;
+	required	string	ZVar = 17;
+	required	string	XVarName = 18;
+	required	string	YVarName = 19;
+	required	string	ZVarName = 20;
+	required	string	CabStructCabStructGapCode = 21;
+	required	string	CabStructGapName = 22;
+	required	string	CabStructGapMemo = 23;
+	required	int32	CreatorID = 24;
+	required	int32	UpdaterID = 25;
+	required	int64	CreateTime = 26;
+	required	int64	UpdateTime = 27;
+	required	int64	VerCode = 28;
+}
+
+message	JK_CabStructInfo
+{
+	required	int32	CabStructID = 1;
+	required	int32	FactoryID = 2;
+	required	int64	VerCode = 3;
+	required	int32	GroupID = 4;
+	required	bool	IsDel = 5;
+	required	bool	IsActive = 6;
+	required	int32	CabGapType = 7;
+	required	int32	CabShapeID = 8;
+	required	double	VirtualXLen = 9;
+	required	double	VirtualYLen = 10;
+	required	double	VirtualZLen = 11;
+	required	double	VirtualShapeXLen = 12;
+	required	double	VirtualShapeZLen = 13;
+	required	double	VirtualGapXLen = 14;
+	required	double	VirtualGapYLen = 15;
+	required	double	VirtualGapZLen = 16;
+	required	int32	CreatorID = 17;
+	required	int32	UpdaterID = 18;
+	required	int64	CreateTime = 19;
+	required	int64	UpdateTime = 20;
+	required	string	CabStructCode = 21;
+	required	string	CabStructName = 22;
+	required	string	CabStructMemo = 23;
+}
+
+message	JK_CabStructMatPlanMapInfo
+{
+	required	int32	CabMatPlanID = 1;
+	required	int32	CabStructID = 2;
+	required	int64	VerCode = 3;
+	required	int32	FactoryID = 4;
+}
+
+message	JK_CabinetSizeBoardInfo
+{
+	required	int32	CabinetSizeBoardID = 1;
+	required	int32	CabinetSizeID = 2;
+	required	bool	IsDel = 3;
+	required	int32	CabStructBoardID = 4;
+	required	bool	IsCanRelocate = 5;
+	required	bool	IsCanDel = 6;
+	required	int32	FactoryID = 7;
+	required	int64	CreateTime = 8;
+	required	int32	CreatorID = 9;
+	required	int64	UpdateTime = 10;
+	required	int32	UpdaterID = 11;
+	required	int32	XDock = 12;
+	required	int32	YDock = 13;
+	required	int32	ZDock = 14;
+	required	string	XOffsetFormula = 15;
+	required	string	YOffsetFormula = 16;
+	required	string	ZOffsetFormula = 17;
+	required	string	CabStructBoardName = 18;
+	required	int64	VerCode = 19;
+}
+
+message	JK_CabinetSizeInfo
+{
+	required	int32	CabDesignID = 1;
+	required	bool	IsDel = 2;
+	required	int32	CabinetSizeID = 3;
+	required	int32	PhotoID = 4;
+	required	double	XLen = 5;
+	required	double	YLen = 6;
+	required	double	ZLen = 7;
+	required	bool	IsStandard = 8;
+	required	double	MinXLen = 9;
+	required	double	MaxXLen = 10;
+	required	double	XLenStep = 11;
+	required	double	MinYLen = 12;
+	required	double	MaxYLen = 13;
+	required	double	YLenStep = 14;
+	required	double	MinZLen = 15;
+	required	double	MaxZLen = 16;
+	required	double	ZLenStep = 17;
+	required	double	ShapeXLen = 18;
+	required	double	ShapeZLen = 19;
+	required	double	GapXLen = 20;
+	required	double	GapYLen = 21;
+	required	double	GapZLen = 22;
+	required	double	ShapeMinXLen = 23;
+	required	double	ShapeMaxXLen = 24;
+	required	double	ShapeXLenStep = 25;
+	required	double	ShapeMinZLen = 26;
+	required	double	ShapeMaxZLen = 27;
+	required	double	ShapeZLenStep = 28;
+	required	double	GapMinXLen = 29;
+	required	double	GapMaxXLen = 30;
+	required	double	GapXLenStep = 31;
+	required	double	GapMinYLen = 32;
+	required	double	GapMaxYLen = 33;
+	required	double	GapYLenStep = 34;
+	required	double	GapMinZLen = 35;
+	required	double	GapMaxZLen = 36;
+	required	double	GapZLenStep = 37;
+	required	int32	FootCount = 38;
+	required	bool	IsSysFootRule = 39;
+	required	int32	FactoryID = 40;
+	required	int32	CreatorID = 41;
+	required	int32	UpdaterID = 42;
+	required	int64	CreateTime = 43;
+	required	int64	UpdateTime = 44;
+	required	string	CabinetSizeCode = 45;
+	required	string	CabinetSizeName = 46;
+	required	string	CabinetSizeMemo = 47;
+	required	int64	VerCode = 48;
+}
+
+message	JK_CabinetSizeStructBoardInfo
+{
+	required	int32	CabStructBoardID = 1;
+	required	int32	CabinetSizeID = 2;
+	required	int64	VerCode = 3;
+	required	int32	FactoryID = 4;
+}
+
+message	JK_DecorBoardFrameMapInfo
+{
+	required	int32	DecorBoardID = 1;
+	required	int32	DecorFrameID = 2;
+	required	bool	IsDefault = 3;
+	required	int64	VerCode = 4;
+	required	int32	FactoryID = 5;
+}
+
+message	JK_DecorBoardInfo
+{
+	required	int32	DecorBoardID = 1;
+	required	int32	FactoryID = 2;
+	required	int32	GroupID = 3;
+	required	bool	IsDel = 4;
+	required	bool	IsActive = 5;
+	required	int32	CreatorID = 6;
+	required	int32	UpdaterID = 7;
+	required	int64	CreateTime = 8;
+	required	int64	UpdateTime = 9;
+	required	int32	SourceType = 10;
+	required	double	DefaultYPos = 11;
+	required	string	DecorBoardCode = 12;
+	required	string	DecorBoardName = 13;
+	required	string	DecorBoardMemo = 14;
+	required	int64	VerCode = 15;
+	required	int32	GTypeID = 16;
+	required	string	XFormula = 17;
+	required	string	YFormula = 18;
+	required	double	ZLen = 19;
+	required	bool	IsCanResize = 20;
+	required	double	MinXLen = 21;
+	required	double	MaxXLen = 22;
+	required	double	XLenStep = 23;
+	required	double	MinYLen = 24;
+	required	double	MaxYLen = 25;
+	required	double	YLenStep = 26;
+	required	int32	XDock = 27;
+	required	int32	YDock = 28;
+	required	string	XOffsetFormula = 29;
+	required	string	YOffsetFormula = 30;
+	required	string	ZOffsetFormula = 31;
+	required	int32	PhotoID = 32;
+}
+
+message	JK_DecorBoardMatInfo
+{
+	required	int32	DecorBoardID = 1;
+	required	int32	MatID = 2;
+	required	int32	MatGType = 3;
+	required	bool	IsDefault = 4;
+	required	int64	VerCode = 5;
+	required	int32	FactoryID = 6;
+}
+
+message	JK_DecorBoardUnitInfo
+{
+	required	int32	DecorBoardUnitID = 1;
+	required	bool	IsDel = 2;
+	required	int32	DecorBoardID = 3;
+	required	int32	SplitType = 4;
+	required	int32	SkinDirection = 5;
+	required	double	ArcX = 6;
+	required	double	ArcY = 7;
+	required	double	ArcZ = 8;
+	required	string	XFormula = 9;
+	required	string	YFormula = 10;
+	required	int32	XDock = 11;
+	required	int32	YDock = 12;
+	required	int32	ZDock = 13;
+	required	string	XOffsetFormula = 14;
+	required	string	YOffsetFormula = 15;
+	required	string	ZOffsetFormula = 16;
+	required	int32	DecorBoardUnitIndex = 17;
+	required	string	DecorBoardUnitName = 18;
+	required	string	DecorBoardUnitMemo = 19;
+	required	int64	VerCode = 20;
+	required	int32	FactoryID = 21;
+	required	int32	CreatorID = 22;
+	required	int32	UpdaterID = 23;
+	required	int64	CreateTime = 24;
+	required	int64	UpdateTime = 25;
+	required	bool	IsUseDefaultMat = 26;
+}
+
+message	JK_DecorBoardUnitMatInfo
+{
+	required	int32	DecorBoardUnitID = 1;
+	required	int32	MatID = 2;
+	required	int32	MatGType = 3;
+	required	bool	IsDefault = 4;
+	required	int32	DefaultSealRuleID = 5;
+	required	int32	SkinDirection = 6;
+	required	int64	VerCode = 7;
+	required	int32	FactoryID = 8;
+}
+
+message	JK_DecorBoardUnitSealInfo
+{
+	required	int32	DecorBoardUnitID = 1;
+	required	int32	SealIndex = 2;
+	required	int32	SealType = 3;
+	required	int32	DefaultMaterialID = 4;
+	required	int64	VerCode = 5;
+	required	int32	FactoryID = 6;
+	required	int32	CreatorID = 7;
+	required	int32	UpdaterID = 8;
+	required	int64	CreateTime = 9;
+	required	int64	UpdateTime = 10;
+	required	int32	SealOrder = 11;
+	required	int32	DecorBoardUnitSealID = 12;
+}
+
+message	JK_DecorInfo
+{
+	required	int32	DecorID = 1;
+	required	int32	GroupID = 2;
+	required	int32	FactoryID = 3;
+	required	bool	IsActive = 4;
+	required	bool	IsSplit = 5;
+	required	bool	IsDel = 6;
+	required	int32	SupplyType = 7;
+	required	int32	GTypeID = 8;
+	required	int32	ShowID = 9;
+	required	int32	SkinID = 10;
+	required	int32	ModelID = 11;
+	required	double	XLen = 12;
+	required	double	YLen = 13;
+	required	double	ZLen = 14;
+	required	int32	CreatorID = 15;
+	required	int32	UpdaterID = 16;
+	required	int64	CreateTime = 17;
+	required	int64	UpdateTime = 18;
+	required	string	DecorCode = 19;
+	required	string	DecorName = 20;
+	required	string	DecorMemo = 21;
+	required	int64	VerCode = 22;
+}
+
+message	JK_DecorLineInfo
+{
+	required	int32	DecorLineID = 1;
+	required	int32	FactoryID = 2;
+	required	int32	GroupID = 3;
+	required	bool	IsDel = 4;
+	required	bool	IsActive = 5;
+	required	int32	GTypeID = 6;
+	required	int32	ShowID = 7;
+	required	int32	ModelID = 8;
+	required	double	ZOffset = 9;
+	required	int32	CreatorID = 10;
+	required	int32	UpdaterID = 11;
+	required	int64	CreateTime = 12;
+	required	int64	UpdateTime = 13;
+	required	string	DecorLineCode = 14;
+	required	string	DecorLineName = 15;
+	required	string	DecorLineMemo = 16;
+	required	int64	VerCode = 17;
+	required	double	DefaultYLen = 18;
+}
+
+message	JK_DecorLineMatInfo
+{
+	required	int32	DecorLineID = 1;
+	required	int32	MaterialID = 2;
+	required	bool	IsDefault = 3;
+	required	int64	VerCode = 4;
+	required	int32	FactoryID = 5;
+}
+
+message	JK_DecorUnitHWFittingMapInfo
+{
+	required	int32	DecorBoardUnitID = 1;
+	required	int32	HWFittingID = 2;
+	required	bool	IsDefault = 3;
+	required	int64	VerCode = 4;
+	required	int32	FactoryID = 5;
+}
+
+message	JK_DoorBoardGapInfo
+{
+	required	int32	DoorBoardGapID = 1;
+	required	int32	DoorBoardID = 2;
+	required	int32	GapPos = 3;
+	required	int32	GapIndex = 4;
+	required	int32	GapType = 5;
+	required	int32	GapShape = 6;
+	required	string	XLenFormula = 7;
+	required	string	YLenFormula = 8;
+	required	string	XOffsetFormula = 9;
+	required	string	YOffsetFormula = 10;
+	required	string	ZOffsetFormula = 11;
+	required	int32	FactoryID = 12;
+	required	int32	CreatorID = 13;
+	required	int32	UpdaterID = 14;
+	required	int64	CreateTime = 15;
+	required	int64	UpdateTime = 16;
+	required	int64	VerCode = 17;
+}
+
+message	JK_DoorBoardInfo
+{
+	required	int32	DoorBoardID = 1;
+	required	int32	DoorID = 2;
+	required	bool	IsDel = 3;
+	required	bool	IsUseDefaultMat = 4;
+	required	int32	SplitType = 5;
+	required	int32	SkinDirection = 6;
+	required	double	ArcX = 7;
+	required	double	ArcY = 8;
+	required	double	ArcZ = 9;
+	required	string	XFormula = 10;
+	required	string	YFormula = 11;
+	required	int32	XDock = 12;
+	required	int32	YDock = 13;
+	required	int32	ZDock = 14;
+	required	string	XOffsetFormula = 15;
+	required	string	YOffsetFormula = 16;
+	required	string	ZOffsetFormula = 17;
+	required	int32	DoorBoardIndex = 18;
+	required	string	DoorBoardName = 19;
+	required	string	DoorBoardMemo = 20;
+	required	int64	VerCode = 21;
+	required	int32	FactoryID = 22;
+	required	int32	CreatorID = 23;
+	required	int32	UpdaterID = 24;
+	required	int64	CreateTime = 25;
+	required	int64	UpdateTime = 26;
+}
+
+message	JK_DoorBoardMatMapInfo
+{
+	required	int32	DoorBoardID = 1;
+	required	int32	MatID = 2;
+	required	int32	MatGType = 3;
+	required	bool	IsDefault = 4;
+	required	int64	VerCode = 5;
+	required	int32	FactoryID = 6;
+}
+
+message	JK_DoorBoardSealInfo
+{
+	required	int32	DoorBoardID = 1;
+	required	int32	SealOrder = 2;
+	required	int32	SealType = 3;
+	required	int64	VerCode = 4;
+	required	int32	FactoryID = 5;
+	required	int32	CreatorID = 6;
+	required	int32	UpdaterID = 7;
+	required	int64	CreateTime = 8;
+	required	int64	UpdateTime = 9;
+	required	int32	SealIndex = 10;
+}
+
+message	JK_DoorInfo
+{
+	required	int32	DoorID = 1;
+	required	int32	GroupID = 2;
+	required	int32	FactoryID = 3;
+	required	int64	VerCode = 4;
+	required	bool	IsDel = 5;
+	required	bool	IsActive = 6;
+	required	int32	GTypeID = 7;
+	required	int32	CombineType = 8;
+	required	int32	PhotoID = 9;
+	required	double	VirtualContainerXLen = 10;
+	required	double	VirtualContainerYLen = 11;
+	required	double	VirtualContainerZLen = 12;
+	required	int32	CreatorID = 13;
+	required	int32	UpdaterID = 14;
+	required	int64	CreateTime = 15;
+	required	int64	UpdateTime = 16;
+	required	string	DoorCode = 17;
+	required	string	DoorName = 18;
+	required	string	DoorMemo = 19;
+}
+
+message	JK_DoorMatMapInfo
+{
+	required	int32	DoorID = 1;
+	required	int32	DoorMatPlanID = 2;
+	required	bool	IsDefault = 3;
+	required	int64	VerCode = 4;
+	required	int32	FactoryID = 5;
+}
+
+message	JK_DoorMatPlanHandleMapInfo
+{
+	required	int32	DoorMatPlanID = 1;
+	required	int32	HandleID = 2;
+	required	int64	VerCode = 3;
+	required	int32	FactoryID = 4;
+}
+
+message	JK_DoorMatPlanInfo
+{
+	required	int32	DoorMatPlanID = 1;
+	required	int32	GroupID = 2;
+	required	bool	IsDel = 3;
+	required	bool	IsActive = 4;
+	required	int32	FactoryID = 5;
+	required	int32	CreatorID = 6;
+	required	int32	UpdaterID = 7;
+	required	int64	CreateTime = 8;
+	required	int64	UpdateTime = 9;
+	required	int32	MatID = 10;
+	required	int32	MatGType = 11;
+	required	string	DoorMatPlanCode = 12;
+	required	string	DoorMatPlanName = 13;
+	required	string	DoorMatPlanMemo = 14;
+	required	int64	VerCode = 15;
+	required	int32	ModelID = 16;
+	required	bool	IsCanSeal = 17;
+}
+
+message	JK_DoorRegionHWFittingMapInfo
+{
+	required	int32	DoorSystemRegionID = 1;
+	required	int32	HWFittingID = 2;
+	required	bool	IsDefault = 3;
+	required	int64	VerCode = 4;
+	required	int32	FactoryID = 5;
+}
+
+message	JK_DoorSystemInfo
+{
+	required	int32	DoorSystemID = 1;
+	required	int32	FactoryID = 2;
+	required	int64	VerCode = 3;
+	required	int32	GroupID = 4;
+	required	bool	IsDel = 5;
+	required	bool	IsActive = 6;
+	required	int32	SupplyType = 7;
+	required	int32	MatchCabShape = 8;
+	required	int32	InstallType = 9;
+	required	double	VirtualXLen = 10;
+	required	double	VirtualYLen = 11;
+	required	double	VirtualShapeXLen = 12;
+	required	double	VirtualShapeZLen = 13;
+	required	int32	CreatorID = 14;
+	required	int32	UpdaterID = 15;
+	required	int64	CreateTime = 16;
+	required	int64	UpdateTime = 17;
+	required	string	DoorSystemCode = 18;
+	required	string	DoorSystemName = 19;
+	required	string	DoorSystemMemo = 20;
+}
+
+message	JK_DoorSystemMatMapInfo
+{
+	required	int32	DoorSystemID = 1;
+	required	int32	DoorMatPlanID = 2;
+	required	bool	IsDefault = 3;
+	required	int64	VerCode = 4;
+	required	int32	FactoryID = 5;
+}
+
+message	JK_DoorSystemRegionDoorMapInfo
+{
+	required	int32	DoorSystemRegionID = 1;
+	required	int32	DoorID = 2;
+	required	bool	IsDefault = 3;
+	required	int64	VerCode = 4;
+	required	int32	FactoryID = 5;
+}
+
+message	JK_DoorSystemRegionInfo
+{
+	required	int32	DoorSystemRegionID = 1;
+	required	int32	DoorSystemID = 2;
+	required	int32	ParentID = 3;
+	required	bool	IsDel = 4;
+	required	int32	RegionIndex = 5;
+	required	int32	CutDirection = 6;
+	required	string	CutFormula = 7;
+	required	bool	IsSlide = 8;
+	required	bool	IsRound = 9;
+	required	int32	LenPrecision = 10;
+	required	int32	OpenDoorType = 11;
+	required	double	XAdjustLen = 12;
+	required	double	YAdjustLen = 13;
+	required	int32	XDock = 14;
+	required	int32	YDock = 15;
+	required	int32	ZDock = 16;
+	required	string	XOffsetFormula = 17;
+	required	string	YOffsetFormula = 18;
+	required	string	ZOffsetFormula = 19;
+	required	bool	IsCanResize = 20;
+	required	int32	DoorFunction = 21;
+	required	int64	VerCode = 22;
+	required	int32	FactoryID = 23;
+	required	int32	CreatorID = 24;
+	required	int32	UpdaterID = 25;
+	required	int64	CreateTime = 26;
+	required	int64	UpdateTime = 27;
+	required	int32	HandleXDock = 28;
+	required	int32	HandleYDock = 29;
+	required	int32	HandleZDock = 30;
+	required	string	HandleXOffsetFormula = 31;
+	required	string	HandleYOffsetFormula = 32;
+	required	string	HandleZOffsetFormula = 33;
+	required	double	ZLen = 34;
+	required	int32	DoorBoardMatType = 35;
+	required	int32	DoorBoardMatID = 36;
+	required	bool	IsUseCustomThick = 37;
+}
+
+message	JK_DoorSystemRegionSlideMapInfo
+{
+	required	int32	DoorSystemRegionID = 1;
+	required	int32	SlideID = 2;
+	required	int32	SlidePosition = 3;
+	required	bool	IsDefault = 4;
+	required	int64	VerCode = 5;
+	required	int32	FactoryID = 6;
+}
+
+message	JK_DoorSystemRegionSlidePositionSizeInfo
+{
+	required	int32	DoorSystemRegionID = 1;
+	required	int32	SlidePosition = 2;
+	required	double	XAdjustLen = 3;
+	required	int32	XDock = 4;
+	required	int32	YDock = 5;
+	required	int32	ZDock = 6;
+	required	string	XOffsetFormula = 7;
+	required	string	YOffsetFormula = 8;
+	required	string	ZOffsetFormula = 9;
+	required	int64	VerCode = 10;
+	required	int32	FactoryID = 11;
+	required	int32	CreatorID = 12;
+	required	int32	UpdaterID = 13;
+	required	int64	CreateTime = 14;
+	required	int64	UpdateTime = 15;
+}
+
+message	JK_FNFittingInfo
+{
+	required	int32	FNFittingID = 1;
+	required	int32	FactoryID = 2;
+	required	int32	GroupID = 3;
+	required	bool	IsDel = 4;
+	required	bool	IsActive = 5;
+	required	bool	IsSplit = 6;
+	required	int32	SupplyType = 7;
+	required	int32	GTypeID = 8;
+	required	bool	IsEntire = 9;
+	required	int32	ShowID = 10;
+	required	int32	ModelID = 11;
+	required	double	XLen = 12;
+	required	double	YLen = 13;
+	required	double	ZLen = 14;
+	required	double	MinInstallX = 15;
+	required	double	MinInstallY = 16;
+	required	double	MinInstallZ = 17;
+	required	double	MinXLen = 18;
+	required	double	MaxXLen = 19;
+	required	double	MinYLen = 20;
+	required	double	MaxYLen = 21;
+	required	double	MinZLen = 22;
+	required	double	MaxZLen = 23;
+	required	bool	IsMatchXLen = 24;
+	required	bool	IsMatchYLen = 25;
+	required	bool	IsMatchZLen = 26;
+	required	double	DefaultYPos = 27;
+	required	int32	CreatorID = 28;
+	required	int32	UpdaterID = 29;
+	required	int64	CreateTime = 30;
+	required	int64	UpdateTime = 31;
+	required	string	FNFittingCode = 32;
+	required	string	FNFittingName = 33;
+	required	string	FNFittingMemo = 34;
+	required	int64	VerCode = 35;
+}
+
+message	JK_FNFittingMatInfo
+{
+	required	int32	FNFittingID = 1;
+	required	int32	MaterialID = 2;
+	required	bool	IsDefault = 3;
+	required	int64	VerCode = 4;
+	required	int32	FactoryID = 5;
+}
+
+message	JK_FNFittingPartInfo
+{
+	required	int32	FNFittingPartID = 1;
+	required	int32	PartType = 2;
+	required	bool	IsDel = 3;
+	required	int32	FNFittingID = 4;
+	required	bool	IsUseMain = 5;
+	required	int32	SkinDirection = 6;
+	required	int32	SplitType = 7;
+	required	double	ArcX = 8;
+	required	double	ArcY = 9;
+	required	double	ArcZ = 10;
+	required	string	XFormula = 11;
+	required	string	YFormula = 12;
+	required	int32	XDock = 13;
+	required	int32	YDock = 14;
+	required	int32	ZDock = 15;
+	required	string	XOffsetFormula = 16;
+	required	string	YOffsetFormula = 17;
+	required	string	ZOffsetFormula = 18;
+	required	string	FNFittingPartCode = 19;
+	required	string	FNFittingPartName = 20;
+	required	string	FNFittingPartMemo = 21;
+	required	int64	VerCode = 22;
+	required	int32	FactoryID = 23;
+	required	int32	CreatorID = 24;
+	required	int32	UpdaterID = 25;
+	required	int64	CreateTime = 26;
+	required	int64	UpdateTime = 27;
+}
+
+message	JK_FNFittingPartMatInfo
+{
+	required	int32	FNFittingPartID = 1;
+	required	int32	MaterialID = 2;
+	required	bool	IsDefault = 3;
+	required	int64	VerCode = 4;
+	required	int32	FactoryID = 5;
+	required	int32	MatGType = 6;
+}
+
+message	JK_FNFittingPartSealInfo
+{
+	required	int32	FNFittingPartID = 1;
+	required	int32	SealOrder = 2;
+	required	int32	SealIndex = 3;
+	required	int32	SealType = 4;
+	required	int64	VerCode = 5;
+	required	int32	FactoryID = 6;
+	required	int32	CreatorID = 7;
+	required	int32	UpdaterID = 8;
+	required	int64	CreateTime = 9;
+	required	int64	UpdateTime = 10;
+}
+
+message	JK_FittingInfo
+{
+	required	int32	FittingID = 1;
+	required	int32	FactoryID = 2;
+	required	int32	GroupID = 3;
+	required	bool	IsDel = 4;
+	required	bool	IsActive = 5;
+	required	bool	IsSplit = 6;
+	required	int32	GTypeID = 7;
+	required	int32	SupplyType = 8;
+	required	int32	ShowID = 9;
+	required	int32	CreatorID = 10;
+	required	int32	UpdaterID = 11;
+	required	int64	CreateTime = 12;
+	required	int64	UpdateTime = 13;
+	required	string	FittingCode = 14;
+	required	string	FittingName = 15;
+	required	string	FittingMemo = 16;
+	required	int64	VerCode = 17;
+}
+
+message	JK_FittingRuleInfo
+{
+	required	int32	FittingRuleID = 1;
+	required	int32	OwnerID = 2;
+	required	int32	OwnerGTypeID = 3;
+	required	bool	IsDefault = 4;
+	required	bool	IsCanDel = 5;
+	required	double	MinLen = 6;
+	required	double	MaxLen = 7;
+	required	int32	FittingID = 8;
+	required	int32	FittingType = 9;
+	required	int32	UseCount = 10;
+	required	int64	VerCode = 11;
+	required	int32	FactoryID = 12;
+	required	int32	CreatorID = 13;
+	required	int32	UpdaterID = 14;
+	required	int64	CreateTime = 15;
+	required	int64	UpdateTime = 16;
+}
+
+message	JK_FormulaConstInfo
+{
+	required	int32	FactoryID = 1;
+	required	int64	VerCode = 2;
+	required	string	ConstCode = 3;
+	required	string	ConstText = 4;
+	required	double	ConstValue = 5;
+	required	int32	CreatorID = 6;
+	required	int32	UpdaterID = 7;
+	required	int64	CreateTime = 8;
+	required	int64	UpdateTime = 9;
+}
+
+message	JK_GroupInfo
+{
+	required	int32	GroupID = 1;
+	required	int32	ParentID = 2;
+	required	int32	FactoryID = 3;
+	required	bool	IsDel = 4;
+	required	int32	GTypeID = 5;
+	required	int32	CreatorID = 6;
+	required	int32	UpdaterID = 7;
+	required	int64	CreateTime = 8;
+	required	int64	UpdateTime = 9;
+	required	string	GroupCode = 10;
+	required	string	GroupName = 11;
+	required	string	GroupMemo = 12;
+	required	int64	VerCode = 13;
+}
+
+message	JK_HWFittingInfo
+{
+	required	int32	HWFittingID = 1;
+	required	int32	FactoryID = 2;
+	required	int32	GroupID = 3;
+	required	bool	IsDel = 4;
+	required	bool	IsActive = 5;
+	required	bool	IsSplit = 6;
+	required	int32	SupplyType = 7;
+	required	int32	GTypeID = 8;
+	required	int32	ShowID = 9;
+	required	int32	ModelID = 10;
+	required	double	XLen = 11;
+	required	double	YLen = 12;
+	required	double	ZLen = 13;
+	required	int32	SettingCountRuleID = 14;
+	required	bool	IsMatchXLen = 15;
+	required	bool	IsMatchYLen = 16;
+	required	bool	IsMatchZLen = 17;
+	required	double	EffectLen = 18;
+	required	double	XAdjustLen = 19;
+	required	bool	IsEmbed = 20;
+	required	int32	InstallDirection = 21;
+	required	int32	CreatorID = 22;
+	required	int32	UpdaterID = 23;
+	required	int64	CreateTime = 24;
+	required	int64	UpdateTime = 25;
+	required	string	HWFittingCode = 26;
+	required	string	HWFittingName = 27;
+	required	string	HWFittingMemo = 28;
+	required	int64	VerCode = 29;
+}
+
+message	JK_HoleRuleInfo
+{
+	required	int32	HoleID = 1;
+	required	int32	FNFittingID = 2;
+	required	int32	HoleTypeID = 3;
+	required	double	XLen = 4;
+	required	double	YLen = 5;
+	required	double	OverHeight = 6;
+	required	int32	HolePicID = 7;
+	required	double	MinXDistance = 8;
+	required	double	MinZDistance = 9;
+	required	int64	VerCode = 10;
+	required	int32	FactoryID = 11;
+	required	int32	CreatorID = 12;
+	required	int32	UpdaterID = 13;
+	required	int64	CreateTime = 14;
+	required	int64	UpdateTime = 15;
+}
+
+message	JK_MaterialInfo
+{
+	required	int32	MaterialID = 1;
+	required	int32	FactoryID = 2;
+	required	int32	GroupID = 3;
+	required	bool	IsDel = 4;
+	required	bool	IsActive = 5;
+	required	bool	IsSplit = 6;
+	required	int32	SupplyType = 7;
+	required	int32	GTypeID = 8;
+	required	int32	ShowID = 9;
+	required	int32	ModelID = 10;
+	required	double	XLen = 11;
+	required	double	YLen = 12;
+	required	double	ZLen = 13;
+	required	bool	IsMatchXLen = 14;
+	required	bool	IsMatchYLen = 15;
+	required	bool	IsMatchZLen = 16;
+	required	int32	SkinID = 17;
+	required	int32	SkinDirection = 18;
+	required	int32	TransCode = 19;
+	required	int32	CreatorID = 20;
+	required	int32	UpdaterID = 21;
+	required	int64	CreateTime = 22;
+	required	int64	UpdateTime = 23;
+	required	string	MaterialCode = 24;
+	required	string	MaterialName = 25;
+	required	string	MaterialMemo = 26;
+	required	int64	VerCode = 27;
+}
+
+message	JK_MaterialSealRuleMapInfo
+{
+	required	int32	MaterialID = 1;
+	required	int32	SealRuleID = 2;
+	required	bool	IsCabDef = 3;
+	required	bool	IsDoorDef = 4;
+	required	int64	VerCode = 5;
+	required	int32	FactoryID = 6;
+}
+
+message	JK_ModelInfo
+{
+	required	int32	ModelID = 1;
+	required	int32	GroupID = 2;
+	required	int32	FactoryID = 3;
+	required	int32	GTypeID = 4;
+	required	double	ArcX = 5;
+	required	double	ArcY = 6;
+	required	double	ArcZ = 7;
+	required	bool	IsDel = 8;
+	required	int32	CreatorID = 9;
+	required	int32	UpdaterID = 10;
+	required	int64	CreateTime = 11;
+	required	int64	UpdateTime = 12;
+	required	string	ModelCode = 13;
+	required	string	ModelName = 14;
+	required	string	RelativePath = 15;
+	required	string	ModelMemo = 16;
+	required	string	HASHCode = 17;
+	required	int64	VerCode = 18;
+	required	int32	FrontViewID = 19;
+	required	int32	RightViewID = 20;
+	required	int32	TopViewID = 21;
+	required	int32	PhotoID = 22;
+}
+
+message	JK_NumberRuleInfo
+{
+	required	int32	NumberRuleID = 1;
+	required	int32	FittingID = 2;
+	required	double	MinLen = 3;
+	required	double	MaxLen = 4;
+	required	int32	UseCount = 5;
+	required	int64	VerCode = 6;
+	required	int32	FactoryID = 7;
+	required	int32	CreatorID = 8;
+	required	int32	UpdaterID = 9;
+	required	int64	CreateTime = 10;
+	required	int64	UpdateTime = 11;
+}
+
+message	JK_PackageInfo
+{
+	required	int32	FittingPackID = 1;
+	required	int32	FactoryID = 2;
+	required	int32	GroupID = 3;
+	required	bool	IsDel = 4;
+	required	bool	IsActive = 5;
+	required	bool	IsSplit = 6;
+	required	bool	IsSeparate = 7;
+	required	int32	GTypeID = 8;
+	required	int32	CreatorID = 9;
+	required	int32	UpdaterID = 10;
+	required	int64	CreateTime = 11;
+	required	int64	UpdateTime = 12;
+	required	string	FittingPackCode = 13;
+	required	string	FittingPackName = 14;
+	required	string	FittingPackMemo = 15;
+	required	int64	VerCode = 16;
+}
+
+message	JK_PackageMapInfo
+{
+	required	int32	PackageID = 1;
+	required	int32	FittingID = 2;
+	required	int32	FittingCount = 3;
+	required	int64	VerCode = 4;
+	required	int32	FactoryID = 5;
+}
+
+message	JK_ProductInfo
+{
+	required	int32	ProductID = 1;
+	required	int32	FactoryID = 2;
+	required	int32	GroupID = 3;
+	required	bool	IsDel = 4;
+	required	bool	IsActive = 5;
+	required	bool	IsSplit = 6;
+	required	int32	SupplyType = 7;
+	required	int32	GTypeID = 8;
+	required	int32	ShowID = 9;
+	required	int32	ModelID = 10;
+	required	double	XLen = 11;
+	required	double	YLen = 12;
+	required	double	ZLen = 13;
+	required	int32	CreatorID = 14;
+	required	int32	UpdaterID = 15;
+	required	int64	CreateTime = 16;
+	required	int64	UpdateTime = 17;
+	required	string	ProductCode = 18;
+	required	string	ProductName = 19;
+	required	string	ProductMemo = 20;
+	required	int64	VerCode = 21;
+}
+
+message	JK_ProductSeriesInfo
+{
+	required	int32	ProductSeriesID = 1;
+	required	int32	FactoryID = 2;
+	required	int32	GroupID = 3;
+	required	bool	IsDel = 4;
+	required	bool	IsActive = 5;
+	required	int32	CreatorID = 6;
+	required	int32	UpdaterID = 7;
+	required	int64	CreateTime = 8;
+	required	int64	UpdateTime = 9;
+	required	string	ProductSeriesCode = 10;
+	required	string	ProductSeriesName = 11;
+	required	string	ProductSeriesMemo = 12;
+	required	int64	VerCode = 13;
+}
+
+message	JK_ProductSeriesValidInfo
+{
+	required	int32	ProductSeriesID = 1;
+	required	int32	ProductSeriesItemID = 2;
+	required	int32	PSType = 3;
+	required	int32	ParentID = 4;
+	required	bool	IsDefault = 5;
+	required	bool	IsGroup = 6;
+	required	int64	VerCode = 7;
+	required	int32	FactoryID = 8;
+	required	int32	CreatorID = 9;
+	required	int32	UpdaterID = 10;
+	required	int64	CreateTime = 11;
+	required	int64	UpdateTime = 12;
+	required	int32	DefaultItemID = 13;
+}
+
+message	JK_ResourceInfo
+{
+	required	int32	ResourceID = 1;
+	required	int32	GroupID = 2;
+	required	int32	FactoryID = 3;
+	required	int32	GTypeID = 4;
+	required	bool	IsDel = 5;
+	required	double	XLen = 6;
+	required	double	YLen = 7;
+	required	int32	CreatorID = 8;
+	required	int32	UpdaterID = 9;
+	required	int64	CreateTime = 10;
+	required	int64	UpdateTime = 11;
+	required	string	ResourceCode = 12;
+	required	string	ResourceName = 13;
+	required	string	RelativePath = 14;
+	required	string	ResourceMemo = 15;
+	required	string	HASHCode = 16;
+	required	int64	VerCode = 17;
+}
+
+message	JK_SealRuleInfo
+{
+	required	int32	SealRuleID = 1;
+	required	bool	IsDel = 2;
+	required	int32	VisibleSealID = 3;
+	required	int32	InvisibleSealID = 4;
+	required	double	VisPreMill = 5;
+	required	double	InvisPreMill = 6;
+	required	int32	STypeID = 7;
+	required	string	SealRuleName = 8;
+	required	int64	VerCode = 9;
+	required	int32	FactoryID = 10;
+	required	int32	CreatorID = 11;
+	required	int32	UpdaterID = 12;
+	required	int64	CreateTime = 13;
+	required	int64	UpdateTime = 14;
+}
+
+message	JK_SysConfigInfo
+{
+	required	int32	FactoryID = 1;
+	required	int64	VerCode = 2;
+	required	int32	ConfigID = 3;
+	required	double	TableFrontLen = 4;
+	required	double	TableSideLen = 5;
+	required	double	BaseCabDefaultYPos = 6;
+	required	double	BaseCabSideLen = 7;
+	required	double	WallCabDefaultYPos = 8;
+	required	double	WallCabSideLen = 9;
+	required	double	ToekickFrontLen = 10;
+	required	double	DefaultBarHeight = 11;
+	required	double	DefaultSealExtraLen = 12;
+	required	double	DefaultSealPreMillLen = 13;
+	required	double	ShelfDefaultYPos = 14;
+	required	double	BGPanelDefaultYPos = 15;
+	required	double	TableToCabDefaultYLen = 16;
+	required	double	DefaultBaseCabinetXLen = 17;
+	required	double	DefaultBaseCabinetYLen = 18;
+	required	double	DefaultBaseCabinetZLen = 19;
+	required	double	DefaultWallCabinetXLen = 20;
+	required	double	DefaultWallCabinetYLen = 21;
+	required	double	DefaultWallCabinetZLen = 22;
+	required	double	DefaultLCabinetXLen = 23;
+	required	double	DefaultLCabinetZLen = 24;
+	required	double	DefaultCabinetBoardThick = 25;
+	required	double	DefaultDoorBoardThick = 26;
+	required	double	DefaultThinBoardThick = 27;
+	required	double	DefaultDecorLineHeight = 28;
+	required	double	DefaultDrawerXLen = 29;
+	required	double	DefaultDrawerYLen = 30;
+	required	double	DefaultDrawerZLen = 31;
+	required	int32	CreatorID = 32;
+	required	int32	UpdaterID = 33;
+	required	int64	CreateTime = 34;
+	required	int64	UpdateTime = 35;
+}
+
+message	JK_SysRuleConfigInfo
+{
+	required	int32	FactoryID = 1;
+	required	int64	VerCode = 2;
+	required	bool	IsDel = 3;
+	required	int32	RuleConfigID = 4;
+	required	int32	RuleTypeID = 5;
+	required	int32	CabType = 6;
+	required	double	MinXLen = 7;
+	required	double	MinYLen = 8;
+	required	double	MaxXLen = 9;
+	required	double	MaxYLen = 10;
+	required	int32	UseCount = 11;
+	required	int32	CreatorID = 12;
+	required	int32	UpdaterID = 13;
+	required	int64	CreateTime = 14;
+	required	int64	UpdateTime = 15;
+}
+
+message	JK_SysRuleTypeInfo
+{
+	required	int32	FactoryID = 1;
+	required	int64	VerCode = 2;
+	required	int32	RuleTypeID = 3;
+	required	bool	IsDel = 4;
+	required	string	RuleTypeName = 5;
+	required	bool	IsDefault = 6;
+	required	int32	RType = 7;
+	required	int32	CreatorID = 8;
+	required	int32	UpdaterID = 9;
+	required	int64	CreateTime = 10;
+	required	int64	UpdateTime = 11;
+}
+
+message	JK_TableTopSideInfo
+{
+	required	int32	TableTopSideID = 1;
+	required	int32	TableTopID = 2;
+	required	bool	IsDel = 3;
+	required	int32	ModelID = 4;
+	required	int32	ShowID = 5;
+	required	double	SideWidth = 6;
+	required	int32	MaterialID = 7;
+	required	bool	IsDefault = 8;
+	required	int64	VerCode = 9;
+	required	int32	FactoryID = 10;
+	required	int32	CreatorID = 11;
+	required	int32	UpdaterID = 12;
+	required	int64	CreateTime = 13;
+	required	int64	UpdateTime = 14;
+}
+
+message JK_Table
+{
+	repeated	JK_CabBoardMatInfo	JK_CabBoardMatInfo = 1;
+	repeated	JK_CabBoardMatSkinInfo	JK_CabBoardMatSkinInfo = 2;
+	repeated	JK_CabDesignBoardSealEdgeInfo	JK_CabDesignBoardSealEdgeInfo = 3;
+	repeated	JK_CabDesignBoardSealInfo	JK_CabDesignBoardSealInfo = 4;
+	repeated	JK_CabDesignDoorRegionHandleInfo	JK_CabDesignDoorRegionHandleInfo = 5;
+	repeated	JK_CabDesignDoorRegionInfo	JK_CabDesignDoorRegionInfo = 6;
+	repeated	JK_CabDesignDoorSystemInfo	JK_CabDesignDoorSystemInfo = 7;
+	repeated	JK_CabDesignFNFittingInfo	JK_CabDesignFNFittingInfo = 8;
+	repeated	JK_CabDesignFNFittingMapInfo	JK_CabDesignFNFittingMapInfo = 9;
+	repeated	JK_CabDesignFootInfo	JK_CabDesignFootInfo = 10;
+	repeated	JK_CabDesignInfo	JK_CabDesignInfo = 11;
+	repeated	JK_CabDesignMatInfo	JK_CabDesignMatInfo = 12;
+	repeated	JK_CabMatPlanInfo	JK_CabMatPlanInfo = 13;
+	repeated	JK_CabStructBoardGapInfo	JK_CabStructBoardGapInfo = 14;
+	repeated	JK_CabStructBoardInfo	JK_CabStructBoardInfo = 15;
+	repeated	JK_CabStructBoardSealInfo	JK_CabStructBoardSealInfo = 16;
+	repeated	JK_CabStructGapInfo	JK_CabStructGapInfo = 17;
+	repeated	JK_CabStructInfo	JK_CabStructInfo = 18;
+	repeated	JK_CabStructMatPlanMapInfo	JK_CabStructMatPlanMapInfo = 19;
+	repeated	JK_CabinetSizeBoardInfo	JK_CabinetSizeBoardInfo = 20;
+	repeated	JK_CabinetSizeInfo	JK_CabinetSizeInfo = 21;
+	repeated	JK_CabinetSizeStructBoardInfo	JK_CabinetSizeStructBoardInfo = 22;
+	repeated	JK_DecorBoardFrameMapInfo	JK_DecorBoardFrameMapInfo = 23;
+	repeated	JK_DecorBoardInfo	JK_DecorBoardInfo = 24;
+	repeated	JK_DecorBoardMatInfo	JK_DecorBoardMatInfo = 25;
+	repeated	JK_DecorBoardUnitInfo	JK_DecorBoardUnitInfo = 26;
+	repeated	JK_DecorBoardUnitMatInfo	JK_DecorBoardUnitMatInfo = 27;
+	repeated	JK_DecorBoardUnitSealInfo	JK_DecorBoardUnitSealInfo = 28;
+	repeated	JK_DecorInfo	JK_DecorInfo = 29;
+	repeated	JK_DecorLineInfo	JK_DecorLineInfo = 30;
+	repeated	JK_DecorLineMatInfo	JK_DecorLineMatInfo = 31;
+	repeated	JK_DecorUnitHWFittingMapInfo	JK_DecorUnitHWFittingMapInfo = 32;
+	repeated	JK_DoorBoardGapInfo	JK_DoorBoardGapInfo = 33;
+	repeated	JK_DoorBoardInfo	JK_DoorBoardInfo = 34;
+	repeated	JK_DoorBoardMatMapInfo	JK_DoorBoardMatMapInfo = 35;
+	repeated	JK_DoorBoardSealInfo	JK_DoorBoardSealInfo = 36;
+	repeated	JK_DoorInfo	JK_DoorInfo = 37;
+	repeated	JK_DoorMatMapInfo	JK_DoorMatMapInfo = 38;
+	repeated	JK_DoorMatPlanHandleMapInfo	JK_DoorMatPlanHandleMapInfo = 39;
+	repeated	JK_DoorMatPlanInfo	JK_DoorMatPlanInfo = 40;
+	repeated	JK_DoorRegionHWFittingMapInfo	JK_DoorRegionHWFittingMapInfo = 41;
+	repeated	JK_DoorSystemInfo	JK_DoorSystemInfo = 42;
+	repeated	JK_DoorSystemMatMapInfo	JK_DoorSystemMatMapInfo = 43;
+	repeated	JK_DoorSystemRegionDoorMapInfo	JK_DoorSystemRegionDoorMapInfo = 44;
+	repeated	JK_DoorSystemRegionInfo	JK_DoorSystemRegionInfo = 45;
+	repeated	JK_DoorSystemRegionSlideMapInfo	JK_DoorSystemRegionSlideMapInfo = 46;
+	repeated	JK_DoorSystemRegionSlidePositionSizeInfo	JK_DoorSystemRegionSlidePositionSizeInfo = 47;
+	repeated	JK_FNFittingInfo	JK_FNFittingInfo = 48;
+	repeated	JK_FNFittingMatInfo	JK_FNFittingMatInfo = 49;
+	repeated	JK_FNFittingPartInfo	JK_FNFittingPartInfo = 50;
+	repeated	JK_FNFittingPartMatInfo	JK_FNFittingPartMatInfo = 51;
+	repeated	JK_FNFittingPartSealInfo	JK_FNFittingPartSealInfo = 52;
+	repeated	JK_FittingInfo	JK_FittingInfo = 53;
+	repeated	JK_FittingRuleInfo	JK_FittingRuleInfo = 54;
+	repeated	JK_FormulaConstInfo	JK_FormulaConstInfo = 55;
+	repeated	JK_GroupInfo	JK_GroupInfo = 56;
+	repeated	JK_HWFittingInfo	JK_HWFittingInfo = 57;
+	repeated	JK_HoleRuleInfo	JK_HoleRuleInfo = 58;
+	repeated	JK_MaterialInfo	JK_MaterialInfo = 59;
+	repeated	JK_MaterialSealRuleMapInfo	JK_MaterialSealRuleMapInfo = 60;
+	repeated	JK_ModelInfo	JK_ModelInfo = 61;
+	repeated	JK_NumberRuleInfo	JK_NumberRuleInfo = 62;
+	repeated	JK_PackageInfo	JK_PackageInfo = 63;
+	repeated	JK_PackageMapInfo	JK_PackageMapInfo = 64;
+	repeated	JK_ProductInfo	JK_ProductInfo = 65;
+	repeated	JK_ProductSeriesInfo	JK_ProductSeriesInfo = 66;
+	repeated	JK_ProductSeriesValidInfo	JK_ProductSeriesValidInfo = 67;
+	repeated	JK_ResourceInfo	JK_ResourceInfo = 68;
+	repeated	JK_SealRuleInfo	JK_SealRuleInfo = 69;
+	repeated	JK_SysConfigInfo	JK_SysConfigInfo = 70;
+	repeated	JK_SysRuleConfigInfo	JK_SysRuleConfigInfo = 71;
+	repeated	JK_SysRuleTypeInfo	JK_SysRuleTypeInfo = 72;
+	repeated	JK_TableTopSideInfo	JK_TableTopSideInfo = 73;
+}
+

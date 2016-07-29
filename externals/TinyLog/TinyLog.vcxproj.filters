@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{6ca8b866-39c3-4e4b-a813-e5c42833f4c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util\NameSpace">
+      <UniqueIdentifier>{61ec9564-f59d-4d60-bc40-f05c846ad39f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util\Type">
+      <UniqueIdentifier>{cb766c21-e981-44de-b40a-5e8f019ed099}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\AsyncCore">
+      <UniqueIdentifier>{0f15833c-ff5f-4724-b655-22dd6a4537b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Data">
+      <UniqueIdentifier>{1bd6d5ce-5014-4a2f-9973-9614a95d076b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Utils\NameSpace\nsAsio.h">
+      <Filter>Util\NameSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\NameSpace\nsFileSystem.h">
+      <Filter>Util\NameSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\NameSpace\nsGtime.h">
+      <Filter>Util\NameSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\NameSpace\nsPosixtime.h">
+      <Filter>Util\NameSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\NameSpace\nsThisThread.h">
+      <Filter>Util\NameSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\NameSpace\nsTransBytes.h">
+      <Filter>Util\NameSpace</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\Type\ConditionType.h">
+      <Filter>Util\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\Type\Crc32Type.h">
+      <Filter>Util\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\Type\DeadlineTimerType.h">
+      <Filter>Util\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\Type\ErrCodeType.h">
+      <Filter>Util\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\Type\FileType.h">
+      <Filter>Util\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\Type\MutexType.h">
+      <Filter>Util\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\Type\PathType.h">
+      <Filter>Util\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\Type\ProactorType.h">
+      <Filter>Util\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\Type\StrDef.h">
+      <Filter>Util\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\Type\TcpType.h">
+      <Filter>Util\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\Type\ThreadType.h">
+      <Filter>Util\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\Type\TimeType.h">
+      <Filter>Util\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\Cast.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\FactoryCreator.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\intDef.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\Pimp.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils\SmartPtr.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncCore\AsynConcurrentPool.h">
+      <Filter>src\AsyncCore</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncCore\AsynConcurrentPoolFwd.h">
+      <Filter>src\AsyncCore</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TinyLogConf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TinyLog.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Data\TimingQueue.h">
+      <Filter>src\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TinyLogImp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncCore\Proactor.h">
+      <Filter>src\AsyncCore</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AsyncCore\ProactorFwd.h">
+      <Filter>src\AsyncCore</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\TinyLog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncCore\AsynConcurrentPool.cpp">
+      <Filter>src\AsyncCore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TinyLogImp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AsyncCore\Proactor.cpp">
+      <Filter>src\AsyncCore</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PerLog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

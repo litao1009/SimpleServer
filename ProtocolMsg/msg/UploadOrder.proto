@@ -1,0 +1,28 @@
+package transMsg;
+
+import "EReturnStatus.proto";
+
+message		SNewOrder
+{
+	required	int64		OldID	= 1;
+	required	int64		NewID	= 2;
+	required	int32		NewIndex= 3;
+	required	bytes		NewCode	= 4;
+}
+
+message		QUploadOrder
+{
+	required	int64		OrderID		= 1;
+	required	bytes		OrderTable	= 2;
+	optional	bool		IsNewOrder	= 3[default=false];
+	optional	int64		ParentID	= 5;
+	optional	int32		OrderType	= 6;
+	optional	bool		IsZbOrder	= 7[default=false];
+	optional	bool		WithFile	= 8[default=false];
+}
+
+message		AUploadOrder
+{	
+	required	EReturnStatus	Stats		= 1;
+	optional	SNewOrder		NewInfo		= 2;
+}
